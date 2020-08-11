@@ -1,0 +1,2976 @@
+<!doctype html>
+<html ⚡ lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>AMP Like A Pro</title>
+    <link rel="canonical" href="https://amplikeapro.com">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-custom>
+        .ampstart-dropdown {
+            min-width: 200px
+        }
+
+        .ampstart-dropdown>section>header {
+            background-color: #fff;
+            border: 0;
+            color: #b60845
+        }
+
+        .ampstart-dropdown>section>header:after {
+            display: inline-block;
+            content: "+";
+            padding: 0 0 0 2rem;
+            color: #003f93
+        }
+
+        .ampstart-dropdown-item {
+            background-color: #fff;
+            color: #003f93;
+            opacity: .9
+        }
+
+        .ampstart-dropdown-item:active,
+        .ampstart-dropdown-item:hover {
+            opacity: 1
+        }
+
+        .ampstart-footer {
+            background-color: #fff;
+            color: #000;
+            font-size: .75rem;
+            padding-top: 7rem;
+            padding-bottom: 7rem
+        }
+
+        .ampstart-footer .ampstart-social-follow li:last-child {
+            margin-right: 0
+        }
+
+        .ampstart-nav-item:active,
+        .ampstart-nav-item:focus,
+        .ampstart-nav-item:hover {
+            opacity: 1
+        }
+
+        .ampstart-navbar-trigger:focus {
+            outline: 0
+        }
+
+        .ampstart-nav a,
+        .ampstart-navbar-trigger {
+            cursor: pointer;
+            text-decoration: none
+        }
+
+        .ampstart-navbar-trigger {
+            line-height: 3.5rem;
+            font-size: 2rem
+        }
+
+        .ampstart-nav-dropdown {
+            min-width: 200px
+        }
+
+        .ampstart-nav-dropdown amp-accordion header {
+            background-color: #fff;
+            border: none
+        }
+
+        .ampstart-nav-dropdown amp-accordion ul {
+            background-color: #fff
+        }
+
+        .ampstart-nav-dropdown .ampstart-dropdown-item,
+        .ampstart-nav-dropdown .ampstart-dropdown>section>header {
+            background-color: #fff;
+            color: #000
+        }
+
+        .ampstart-nav-dropdown .ampstart-dropdown-item {
+            color: #003f93
+        }
+
+        .ampstart-sidebar {
+            background-color: #fff;
+            color: #000;
+            min-width: 300px;
+            width: 300px
+        }
+
+        .ampstart-sidebar-header {
+            line-height: 3.5rem;
+            min-height: 3.5rem
+        }
+
+        .ampstart-sidebar .ampstart-dropdown header,
+        .ampstart-sidebar .ampstart-dropdown-item,
+        .ampstart-sidebar .ampstart-nav-item {
+            margin: 0 0 2.5rem
+        }
+
+        .ampstart-sidebar .ampstart-nav-dropdown {
+            margin: 0
+        }
+
+        .ampstart-sidebar .ampstart-navbar-trigger {
+            line-height: inherit
+        }
+
+        /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
+        /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+        html {
+            font-family: sans-serif;
+            line-height: 1.15;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+
+        body {
+            margin: 0
+        }
+
+        footer,
+        header,
+        nav,
+        section {
+            display: block
+        }
+
+        figure,
+        main {
+            display: block
+        }
+
+        figure {
+            margin: 1em 40px
+        }
+
+        hr {
+            box-sizing: content-box;
+            height: 0;
+            overflow: visible
+        }
+
+        a {
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects
+        }
+
+        a:active,
+        a:hover {
+            outline-width: 0
+        }
+
+        b,
+        strong {
+            font-weight: inherit;
+            font-weight: bolder
+        }
+
+        code {
+            font-family: monospace, monospace;
+            font-size: 1em
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+
+        .h4 {
+            font-size: 1.125rem
+        }
+
+        .h5 {
+            font-size: .875rem
+        }
+
+        .text-decoration-none {
+            text-decoration: none
+        }
+
+        .caps {
+            text-transform: uppercase;
+            letter-spacing: .2em
+        }
+
+        .center {
+            text-align: center
+        }
+
+        .list-reset {
+            list-style: none;
+            padding-left: 0
+        }
+
+        .block {
+            display: block
+        }
+
+        .inline-block {
+            display: inline-block
+        }
+
+        .clearfix:after,
+        .clearfix:before {
+            content: " ";
+            display: table
+        }
+
+        .clearfix:after {
+            clear: both
+        }
+
+        .m0 {
+            margin: 0
+        }
+
+        .my0 {
+            margin-top: 0;
+            margin-bottom: 0
+        }
+
+        .mr1 {
+            margin-right: 1rem
+        }
+
+        .mb1 {
+            margin-bottom: 1rem
+        }
+
+        .mt2 {
+            margin-top: 1.5rem
+        }
+
+        .mb2 {
+            margin-bottom: 1.5rem
+        }
+
+        .mt4 {
+            margin-top: 2.5rem
+        }
+
+        .mb4 {
+            margin-bottom: 2.5rem
+        }
+
+        .ml4 {
+            margin-left: 2.5rem
+        }
+
+        .mx-auto {
+            margin-right: auto
+        }
+
+        .mx-auto {
+            margin-left: auto
+        }
+
+        .p0 {
+            padding: 0
+        }
+
+        .p1 {
+            padding: 1rem
+        }
+
+        .pt1 {
+            padding-top: 1rem
+        }
+
+        .pr1 {
+            padding-right: 1rem
+        }
+
+        .pb1 {
+            padding-bottom: 1rem
+        }
+
+        .pl1 {
+            padding-left: 1rem
+        }
+
+        .py1 {
+            padding-top: 1rem;
+            padding-bottom: 1rem
+        }
+
+        .px1 {
+            padding-left: 1rem;
+            padding-right: 1rem
+        }
+
+        .pr2 {
+            padding-right: 1.5rem
+        }
+
+        .pl2 {
+            padding-left: 1.5rem
+        }
+
+        .px2 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem
+        }
+
+        .pb3 {
+            padding-bottom: 2rem
+        }
+
+        .px3 {
+            padding-left: 2rem;
+            padding-right: 2rem
+        }
+
+        .pr4 {
+            padding-right: 2.5rem
+        }
+
+        .pb4 {
+            padding-bottom: 2.5rem
+        }
+
+        .flex {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex
+        }
+
+        .flex-column {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column
+        }
+
+        .flex-wrap {
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap
+        }
+
+        .items-start {
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start
+        }
+
+        .items-center {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center
+        }
+
+        .justify-start {
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start
+        }
+
+        .justify-around {
+            -ms-flex-pack: distribute;
+            justify-content: space-around
+        }
+
+        .flex-auto {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            min-width: 0;
+            min-height: 0
+        }
+
+        .relative {
+            position: relative
+        }
+
+        .fixed {
+            position: fixed
+        }
+
+        .top-0 {
+            top: 0
+        }
+
+        .right-0 {
+            right: 0
+        }
+
+        .left-0 {
+            left: 0
+        }
+
+        .z3 {
+            z-index: 3
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            background: #fff;
+            color: #4a4a4a;
+            line-height: 1.5rem;
+            font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;
+            min-width: 315px;
+            overflow-x: hidden;
+            font-smooth: always;
+            -webkit-font-smoothing: antialiased
+        }
+
+        main {
+            max-width: 100%;
+            margin: 0 auto
+        }
+
+        p {
+            padding: 0;
+            margin: 0
+        }
+
+        .ampstart-card {
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 1px -1px rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12)
+        }
+
+        h2 {
+            font-size: 2rem;
+            line-height: 2.5rem
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            line-height: 2rem
+        }
+
+        .h4,
+        h4 {
+            font-size: 1.125rem;
+            line-height: 1.5rem
+        }
+
+        .h5 {
+            font-size: .875rem;
+            line-height: 1.125rem
+        }
+
+        h2,
+        h3,
+        h4 {
+            margin: 0;
+            padding: 0;
+            font-weight: 400;
+            letter-spacing: .06em
+        }
+
+        a,
+        a:active,
+        a:visited {
+            color: inherit
+        }
+
+        .ampstart-btn {
+            font-family: inherit;
+            font-weight: inherit;
+            font-size: 1rem;
+            line-height: 1.125rem;
+            padding: .7em .8em;
+            text-decoration: none;
+            white-space: nowrap;
+            word-wrap: normal;
+            vertical-align: middle;
+            cursor: pointer;
+            background-color: #fff;
+            color: #b60845;
+            border: 1px solid #b60845
+        }
+
+        .ampstart-btn:visited {
+            color: #b60845
+        }
+
+        h2,
+        h3,
+        h4 {
+            font-family: Inconsolata, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif
+        }
+
+        .www-heading {
+            letter-spacing: inherit;
+            color: #000
+        }
+
+        .ampstart-footer {
+            position: relative
+        }
+
+        .ampstart-footer:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 35px;
+            background-image: linear-gradient(90deg, #94103e 0, #db004d);
+            top: 0;
+            left: 0;
+            right: 0
+        }
+
+        * {
+            -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
+        }
+
+        body {
+            font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif
+        }
+
+        a.abe-primary {
+            color: #b60845
+        }
+
+        .ampstart-nav-item {
+            position: relative
+        }
+
+        .ampstart-nav-dropdown .ampstart-dropdown-item {
+            color: #b60845;
+            margin: 0
+        }
+
+        .ampstart-dropdown-item a {
+            display: block;
+            padding: 8px
+        }
+
+        .ampstart-dropdown-item a:active,
+        .ampstart-sidebar .ampstart-dropdown header:active {
+            background: #f2f2f2
+        }
+
+        .ampstart-sidebar .ampstart-dropdown header {
+            padding: 1rem 0;
+            margin: 0
+        }
+
+        .ampstart-dropdown>section>header:after {
+            color: #b60845;
+            padding: 0 0 0 .5rem
+        }
+
+        .ampstart-sidebar {
+            width: 340px
+        }
+
+        .ampstart-btn,
+        a.ampstart-btn {
+            color: #b60845;
+            border: 1px solid #b60845
+        }
+
+        .ampstart-btn:active,
+        .ampstart-btn:focus,
+        .ampstart-btn:hover,
+        a.ampstart-btn:active,
+        a.ampstart-btn:focus,
+        a.ampstart-btn:hover {
+            color: #db004d;
+            border: 1px solid #db004d
+        }
+
+        .abe-sample-card {
+            background: #f9f7f7;
+            min-width: 260px;
+            width: 0;
+            max-width: 380px;
+            flex: 1 1 240px
+        }
+
+        @media (min-width: 600px) {
+            .abe-sample-card {
+                margin-right: 1rem
+            }
+        }
+
+        .abe-sample-card .ampstart-btn {
+            padding: 8px
+        }
+
+        .abe-sample-card .ampstart-btn:not(.ampstart-btn-secondary) {
+            background-color: transparent
+        }
+
+        .abe-sample-card-actions {
+            margin-top: auto
+        }
+
+        .abe-sample-card-filler {
+            height: 0;
+            background: none
+        }
+
+        .col {
+            float: left
+        }
+
+        .col {
+            box-sizing: border-box
+        }
+
+        .col-2 {
+            width: 16.66667%
+        }
+
+        .col-3 {
+            width: 25%
+        }
+
+        .col-4 {
+            width: 33.33333%
+        }
+
+        .col-10 {
+            width: 83.33333%
+        }
+
+        .col-12 {
+            width: 100%
+        }
+
+        @media (min-width: 0.06rem) {
+            .xs-col {
+                float: left
+            }
+
+            .xs-col {
+                box-sizing: border-box
+            }
+
+            .xs-col-2 {
+                width: 16.66667%
+            }
+
+            .xs-col-4 {
+                width: 33.33333%
+            }
+
+            .xs-col-7 {
+                width: 58.33333%
+            }
+
+            .xs-col-10 {
+                width: 83.33333%
+            }
+
+            .xs-col-12 {
+                width: 100%
+            }
+        }
+
+        @media (min-width:39.06rem) {
+            .sm-col-2 {
+                width: 16.66667%
+            }
+
+            .sm-col-4 {
+                width: 33.33333%
+            }
+
+            .sm-col-5 {
+                width: 41.66667%
+            }
+
+            .sm-col-7 {
+                width: 58.33333%
+            }
+
+            .sm-col-12 {
+                width: 100%
+            }
+        }
+
+        @media (min-width:52.06rem) {
+            .md-col-4 {
+                width: 33.33333%
+            }
+
+            .md-col-5 {
+                width: 41.66667%
+            }
+
+            .md-col-6 {
+                width: 50%
+            }
+
+            .md-col-7 {
+                width: 58.33333%
+            }
+
+            .md-col-8 {
+                width: 66.66667%
+            }
+        }
+
+        @media (max-width:39rem) {
+            .xs-hide {
+                display: none
+            }
+        }
+
+        @media (min-width:39.06rem) and (max-width:52rem) {
+            .sm-hide {
+                display: none
+            }
+        }
+
+        @media (min-width:52.06rem) and (max-width:64rem) {
+            .md-hide {
+                display: none
+            }
+        }
+
+        @media (min-width:64.06rem) {
+            .lg-hide {
+                display: none
+            }
+        }
+
+        body {
+            background: #000;
+            color: #4a4a4a;
+            line-height: 1.5rem;
+            font-smooth: always
+        }
+
+        h2,
+        h3 {
+            font-weight: 700
+        }
+
+        h2 {
+            font-size: 2.4rem
+        }
+
+        h3 {
+            font-size: 2rem;
+            line-height: 2rem;
+            letter-spacing: .06rem;
+            text-transform: capitalize
+        }
+
+        header {
+            z-index: 99
+        }
+
+        #burger {
+            color: rgb(20, 76, 239);
+            left: 4rem;
+            position: relative;
+            z-index: 99;
+            top: 2rem
+        }
+
+        #adLogoSmall amp-img {
+            top: 2.2rem;
+            max-width: 60px;
+            max-height: 60px;
+            left: 88%;
+            position: absolute;
+            z-index: 99
+        }
+
+        section {
+            position: relative
+        }
+
+        section p {
+            margin-bottom: 1rem
+        }
+
+        #videoBackground {
+            position: absolute;
+            top: 0;
+            min-width: 100%;
+            min-height: 300px;
+            left: 0;
+            max-height: 600px
+        }
+
+        .parallax-image-window amp-img {
+            z-index: 1;
+            opacity: .8;
+            position: absolute;
+            top: 0;
+            width: 100%
+        }
+
+        .parallax-image-window amp-video {
+            z-index: 2;
+            opacity: .3
+        }
+
+        .carousel {
+            top: 8rem;
+            position: relative;
+            color: #fff;
+            height: 40rem
+        }
+
+        .carousel amp-carousel .box {
+            position: relative
+        }
+
+        .box {
+            width: 100%;
+            height: 280px
+        }
+
+        .box h2 {
+            font-size: 4rem;
+            text-align: center;
+            top: -1rem;
+            position: relative;
+            line-height: 5rem;
+            padding-left: 33%
+        }
+
+        #who {
+            top: -1rem;
+            position: relative;
+            color: #888;
+            left: 10%;
+            z-index: 3;
+            height: 350px
+        }
+
+        #who h3 {
+            font-size: 2rem
+        }
+
+        main {
+            margin-top: -3rem;
+            position: relative;
+            background: #fff;
+            padding: 4rem 0 0 0;
+            z-index: 2
+        }
+
+        #container {
+            padding-left: 9%;
+            padding-right: 9%
+        }
+
+        #wwdo {
+            position: relative;
+            margin-top: -11rem;
+            padding-bottom: 3rem
+        }
+
+        #wwdoText {
+            position: relative;
+            color: #696363
+        }
+
+        #theFold amp-img#ampStick {
+            top: -11rem;
+            position: relative;
+            z-index: 4;
+            transform: translateY(-5rem);
+            margin-left: .8rem
+        }
+
+        .abe-sample-card {
+            z-index: 9;
+            flex: 1 1 50%;
+            background: #000;
+            min-width: 240px;
+            width: 0;
+            max-width: 500px;
+            flex: 1 1 400px;
+            color: #fff
+        }
+
+        #featured {
+            top: -5rem;
+            position: relative
+        }
+
+        #featuredClients {
+            top: 5rem;
+            position: relative
+        }
+
+        .featuredCard .cardTitle {
+            background: rgba(0, 0, 0, 0.5)
+        }
+
+        .featuredCard h3 {
+            margin-bottom: 1rem
+        }
+
+        .ampstart-btn,
+        a.ampstart-btn {
+            color: #e6750e;
+            border: 1px solid #e6750e
+        }
+
+        .ampstart-btn:visited {
+            color: #e6750e
+        }
+
+        .ampstart-btn:hover,
+        a.ampstart-btn:hover {
+            color: #77B1F6;
+            border: 1px solid #77B1F6
+        }
+
+        #seeMore {
+            padding-right: 2.3rem
+        }
+
+        amp-accordion section:not([expanded]) .show-less {
+            display: none
+        }
+
+        #greyBack {
+            padding-top: 0
+        }
+
+        #getErDone {
+            background: rgba(250, 250, 250, .1);
+            color: #fff;
+            width: 100%;
+            padding: 13rem 8.5% 7rem
+        }
+
+        #getErDone h2,
+        #getErDone h4,
+        #getErDone2 h2,
+        #getErDone2 h4 {
+            color: #fff
+        }
+
+        .ged p {
+            opacity: .6
+        }
+
+        #gradiantLeft amp-img#ampStick2,
+        #gradiantLeft2 amp-img#ampStick3 {
+            top: 0;
+            position: relative;
+            z-index: 0;
+            margin-left: 1.2rem
+        }
+
+        #gradiantLeft,
+        #gradiantLeft2 {
+            background: rgba(250, 250, 250, .1);
+            padding-left: 8.5%;
+            height: 0
+        }
+
+        #ctaBar {
+            background: #77B1F6;
+            color: #fff;
+            padding: 3rem 0
+        }
+
+        #free h4 {
+            background: rgba(22, 22, 22, .4);
+            padding: 1rem
+        }
+
+        #ctaLeft {
+            padding-left: 10rem
+        }
+
+        #ctaRight {
+            padding-right: 10rem
+        }
+
+        #getErDone2 {
+            background: rgba(250, 250, 250, .1);
+            color: #fff;
+            padding-bottom: 7rem
+        }
+
+        #gedLeft2 {
+            padding: 13rem 0 0 6rem
+        }
+
+        #gedRight2 {
+            padding: 13rem 5rem 0 0
+        }
+
+        amp-img#ampStickArrow {
+            float: right;
+            margin-top: -1.1rem;
+            left: -3rem
+        }
+
+        @-webkit-keyframes ampStickArrow {
+            0% {
+                left: -1rem
+            }
+
+            50% {
+                left: 0
+            }
+
+            100% {
+                left: -1rem
+            }
+        }
+
+        @-moz-keyframes ampStickArrow {
+            0% {
+                left: -1rem
+            }
+
+            50% {
+                left: 0
+            }
+
+            100% {
+                left: -1rem
+            }
+        }
+
+        @-o-keyframes ampStickArrow {
+            0% {
+                left: -1rem
+            }
+
+            50% {
+                left: 0
+            }
+
+            100% {
+                left: -1rem
+            }
+        }
+
+        @keyframes ampStickArrow {
+            0% {
+                left: -1rem
+            }
+
+            50% {
+                left: 0
+            }
+
+            100% {
+                left: -1rem
+            }
+        }
+
+        .ged a {
+            cursor: help
+        }
+
+        .ged a:hover amp-img {
+            -webkit-animation: ampStickArrow 1s infinite;
+            -moz-animation: ampStickArrow 1s infinite;
+            -o-animation: ampStickArrow 1s infinite;
+            animation: ampStickArrow 1s infinite
+        }
+
+        .ged hr {
+            margin: 1.4rem 0;
+            visibility: hidden
+        }
+
+        .lightbox {
+            background: rgba(0, 0, 0, .8);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff
+        }
+
+        .lightboxOuter {
+            background: rgba(0, 0, 0, .8)
+        }
+
+        .lightboxTitle {
+            padding-top: 2rem
+        }
+
+        .lightboxContent {
+            padding: 2rem 5rem
+        }
+
+        .lightboxContent a {
+            color: #79B2F3
+        }
+
+        #bbar {
+            background: #77B1F6;
+            color: rgba(0, 0, 0, .6)
+        }
+
+        #codeBlock,
+        #codeBlock2 {
+            background: #272822;
+            color: #f8f8f2
+        }
+
+        span.lightGreen {
+            color: #9ebb26
+        }
+
+        span.hotPink {
+            color: #e92672
+        }
+
+        span.yellow {
+            color: #dfc15e
+        }
+
+        span.brightBlue {
+            color: #63d9ef
+        }
+
+        #introVideo {
+            margin-top: 3rem;
+            text-align: center
+        }
+
+        .courseIcons amp-img {
+            max-width: 3.2rem;
+            max-height: 4rem;
+            text-align: center;
+            margin: 1rem
+        }
+
+        #courseVideo amp-youtube {
+            margin: 2rem 4rem
+        }
+
+        #bbarContent {
+            margin: 3rem 0 3rem 8.5%
+        }
+
+        #bbarContent ul li {
+            list-style: none
+        }
+
+        #facebookvid {
+            padding-top: 4rem
+        }
+
+        #popUpWrapper {
+            margin-bottom: -300px
+        }
+
+        #instructorBox h2 {
+            font-weight: 700;
+            font-size: 2rem;
+            text-align: right;
+            padding-right: 10rem
+        }
+
+        #instructorBox h3 {
+            font-weight: 400;
+            font-size: 2rem;
+            text-align: right;
+            padding-right: 10rem
+        }
+
+        #socialIconsBox {
+            padding-right: 3rem
+        }
+
+        .socialIcon {
+            padding: 1rem;
+            opacity: .6
+        }
+
+        #instructorContent {
+            padding: 3rem
+        }
+
+        #instructorBox {
+            background: #fff;
+            padding: 3rem;
+            color: rgba(0, 0, 0.8)
+        }
+
+        #testimonialBlock {
+            background: rgba(250, 250, 250, .9)
+        }
+
+        #testimonialContent,
+        #testimonialIcons {
+            padding: 0 8%
+        }
+
+        #testimonialIcons {
+            margin-bottom: 8rem;
+            position: relative
+        }
+
+        #testimonialTitle {
+            color: rgba(0, 0, 0, .8);
+            padding-top: 2rem;
+            height: 7rem
+        }
+
+        #testimonialIcons amp-img {
+            border-radius: 100%
+        }
+
+        amp-img#subampStick {
+            transform: rotate(270deg);
+            top: -7rem;
+            margin-bottom: 5rem
+        }
+
+        .testCard {
+            height: 22rem;
+            padding-top: 1rem
+        }
+
+        .testCard:hover,
+        .testCard:active {
+            border-bottom: solid .4rem #77b1f6
+        }
+
+        #bindedTestBlock {
+            background: #fff;
+            position: relative;
+            padding: 1rem 0 3rem 0
+        }
+
+        #bindedTestimonial {
+            font-size: 1.3rem;
+            font-style: italic;
+            line-height: 1.2rem;
+            text-align: center;
+            padding: 1rem 9%
+        }
+
+        #reviewerCompany {
+            margin-left: 35%;
+            margin-right: auto
+        }
+
+        #bindedTestimonial p {
+            color: rgba(0, 0, 0, .8);
+            font-weight: 600;
+            font-size: 1.7rem;
+            line-height: 1.7rem
+        }
+
+        #popUpContainer {
+            position: sticky;
+            bottom: 0;
+            background: #77b1f6;
+            color: #fff;
+            text-align: center;
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+            padding: 1rem;
+            left: 85%;
+            z-index: 1
+        }
+
+        #popUpContainer h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            padding-bottom: 1rem;
+            line-height: 1.1rem
+        }
+
+        #popUpContainer p {
+            font-size: .8rem;
+            font-weight: 400;
+            padding-bottom: 1rem;
+            line-height: .9rem;
+            margin-bottom: -.3rem
+        }
+
+        #closeMe {
+            text-align: right;
+            padding-right: 1rem;
+            padding-bottom: 1rem
+        }
+
+        .animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both
+        }
+
+        #contactBlock {
+            position: relative;
+            background: #e1e1e1;
+            z-index: 2;
+            padding-top: 5rem
+        }
+
+        #contactBlock h2 {
+            text-transform: none
+        }
+
+        #rAMP {
+            position: relative
+        }
+
+        #contactFrame {
+            height: 10rem
+        }
+
+        .leftMargin {
+            margin-left: 8%
+        }
+
+        .footer .leftMargin {
+            margin-left: 15%
+        }
+
+        #socialIcons {
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            margin: 1rem
+        }
+
+        .footer {
+            background: #4d4d4d;
+            z-index: 99;
+            position: relative;
+            bottom: 0
+        }
+
+        amp-img.footerPro {
+            top: 1.2rem;
+            left: -3.1rem
+        }
+
+        footer h3 {
+            color: #fff;
+            min-height: 65px;
+            margin: 1rem 0 3rem
+        }
+
+        .ampstart-footer {
+            color: #717171;
+            padding-top: 2rem;
+            padding-bottom: 0;
+            font-size: .9rem;
+            position: relative
+        }
+
+        .ampstart-footer:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 35px;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-image: none
+        }
+
+        footer h3 {
+            color: #fff;
+            min-height: 65px
+        }
+
+        #austintatious a {
+            color: #337ab7;
+            height: 68px
+        }
+
+        #austintatious {
+            background: #353535
+        }
+
+        footer amp-img {
+            top: 1rem;
+            margin-left: -.7rem
+        }
+
+        footer address {
+            font-style: normal
+        }
+
+        @media (min-width: 64.06rem) {
+            .abe-sample-card {
+                flex: 1 1 30%
+            }
+        }
+
+        @media (min-width: 90.1rem) {
+            body {
+                font-size: 2rem;
+                line-height: 2.2rem
+            }
+        }
+
+        @media (max-width: 64rem) {
+            main {
+                margin-top: -9rem
+            }
+
+            #bindedTestBlock {
+                margin-top: -15rem
+            }
+        }
+
+        @media (max-width: 52rem) {
+            #burger {
+                left: 0;
+                top: 0
+            }
+
+            #adLogoSmall amp-img {
+                top: .5rem;
+                max-width: 40px;
+                max-height: 40px;
+                left: 84%
+            }
+
+            #videoBackground {
+                max-height: 440px;
+                top: 0
+            }
+
+            .box {
+                height: 0;
+                top: 0;
+                z-index: 100
+            }
+
+            .box h2 {
+                padding-left: 0;
+                top: 0
+            }
+
+            .carousel {
+                height: 24rem;
+                top: 6rem
+            }
+
+            #who {
+                top: -9rem;
+                left: 11%
+            }
+
+            #who h3 {
+                font-size: 1.3rem;
+                top: 1rem;
+                position: relative
+            }
+
+            main {
+                margin-top: -5rem
+            }
+
+            #wwdo {
+                margin-top: -6rem
+            }
+
+            #wwdoText {
+                top: 1rem
+            }
+
+            #theFold amp-img#ampStick {
+                top: -6rem
+            }
+
+            #getErDone {
+                padding: 5rem 8.5% 1rem
+            }
+
+            #gedRight {
+                margin-left: 9%
+            }
+
+            #gedLeft2 {
+                padding: 6rem 0 0 4rem
+            }
+
+            #gedRight2 {
+                padding: 0 0 0 4rem
+            }
+
+            #ctaLeft {
+                padding: 0 1rem 2rem
+            }
+
+            #ctaRight {
+                padding: 0 1rem
+            }
+
+            .lightboxTitle {
+                padding-top: 0
+            }
+
+            .lightboxContent {
+                padding: 1rem 2rem;
+                font-size: .8rem;
+                line-height: .8rem
+            }
+
+            .ged amp-img#ampStickArrow {
+                left: 2rem
+            }
+
+            .lbSmall h3 {
+                font-size: 1.3rem;
+                margin-top: 1rem
+            }
+
+            .lightboxContent.lbSmall {
+                padding-top: 0
+            }
+
+            .lbSmall p {
+                font-size: .7rem
+            }
+
+            #bbarText {
+                padding: 3rem 0 0
+            }
+
+            #instructorContent {
+                padding: 0
+            }
+
+            .testCard {
+                border: none;
+                margin-right: 0;
+                height: 9rem
+            }
+
+            #bindedTestBlock {
+                top: 3rem;
+                margin-top: 0
+            }
+
+            #bindedTestimonial p {
+                font-size: 1.2rem
+            }
+
+            #testimonialContent,
+            #testimonialIcons {
+                padding: 0 4.5%
+            }
+
+            #testimonialIcons {
+                margin-bottom: -1rem;
+                left: 0
+            }
+
+            #contactBlock {
+                top: -.1rem;
+                padding-top: 3rem
+            }
+
+            .footer .overlay:after,
+            .footer .overlay:before {
+                content: '';
+                height: 0;
+                position: absolute;
+                transform: skewX(28deg);
+                left: 0;
+                z-index: 0;
+                top: 0
+            }
+        }
+
+        @media (max-width: 39.9rem) {
+            .box {
+                top: 0rem
+            }
+
+            .carousel {
+                height: 24rem
+            }
+
+            .box h2 {
+                top: -.5rem
+            }
+
+            #who {
+                top: -12.6rem;
+                left: 10%;
+                padding: 0 1rem 0 3rem;
+                text-align: center
+            }
+
+            #who h3 {
+                top: 2rem;
+                left: -2rem;
+                font-size: 2rem;
+                padding-bottom: 5rem
+            }
+
+            main {
+                top: -5rem;
+                padding: 4rem 0 3rem 0
+            }
+
+            #wwdo {
+                margin-top: 7rem
+            }
+
+            #wwdoText {
+                top: 0rem;
+                padding-top: 2rem
+            }
+
+            #theFold amp-img#ampStick {
+                top: -11rem
+            }
+
+            #ampstickmobile {
+                left: -0.6rem;
+                position: relative;
+                height: 0;
+                top: 5rem
+            }
+
+            #featuredClients {
+                top: 4rem
+            }
+
+            #seeMore {
+                padding-right: 0
+            }
+
+            #greyBack {
+                padding-top: 0;
+                margin-top: -5rem
+            }
+
+            h2.ged {
+                color: #fff
+            }
+
+            .ged amp-img#ampStickArrow {
+                left: 3rem
+            }
+
+            .lightboxContent {
+                font-size: 1.1rem;
+                line-height: 1.1rem
+            }
+
+            #bbarText {
+                padding-top: 2rem
+            }
+
+            .courseIcons amp-img {
+                margin: 1rem .2rem;
+                top: 3rem
+            }
+
+            #socialIconsBox {
+                padding-right: 0;
+                margin-left: 2rem
+            }
+
+            #teamCards {
+                margin-left: -1.7rem
+            }
+
+            .teamCard amp-img {
+                height: 9rem;
+                width: 6rem
+            }
+
+            #popUpWrapper {
+                margin-bottom: -270px
+            }
+
+            #instructorBox h2,
+            #instructorBox h3 {
+                text-align: center;
+                padding-right: 0
+            }
+
+            #bindedTestBlock {
+                top: -10rem
+            }
+
+            .testCard {
+                height: 9rem;
+                border: none;
+                padding: 1rem 0 2rem 0;
+                margin-right: 0;
+                position: relative;
+                top: -3rem
+            }
+
+            #testimonialContent,
+            #testimonialIcons {
+                padding: 0 7%;
+                height: 28rem
+            }
+
+            #testimonialIcons {
+                top: 5rem
+            }
+
+            #amp-bind {
+                z-index: 3
+            }
+
+            #popUpContainer {
+                width: 100%;
+                border-radius: 0;
+                height: 270px
+            }
+
+            #contactBlock {
+                padding-top: 0;
+                padding-bottom: 3rem;
+                height: 0;
+                top: -13rem
+            }
+
+            #contactBlock h2 {
+                text-transform: none;
+                font-size: 1.3rem;
+                top: 0;
+                margin: 0
+            }
+
+            #contactFrame {
+                margin-bottom: -3rem
+            }
+
+            #rAMP {
+                top: 0
+            }
+
+            #socialIcons {
+                margin: 1rem 0
+            }
+
+            .footer {
+                top: 0;
+                margin-top: -3rem
+            }
+        }
+
+        @media (max-width: 35rem) {
+            #videoBackground amp-video {
+                min-width: 120%
+            }
+        }
+    </style>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <script async custom-element="amp-position-observer"
+        src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <script async custom-element="amp-facebook" src="https://cdn.ampproject.org/v0/amp-facebook-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <meta itemprop="name" content="AMP Like A Pro">
+    <meta itemprop="image" content="assets/imgs/amp-like-a-pro-logo.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@amplikeapro">
+    <meta name="twitter:creator" content="@amplikeapro">
+    <meta name="twitter:title" content="AMP Like A Pro">
+    <meta name="twitter:description"
+        content="AMP Like A Pro is an online course teaching Accelerated Mobile Pages development combining static and WordPress web pages into a 100% AMP valid website.">
+    <meta name="twitter:image" content="assets/imgs/amp-like-a-pro-logo.png">
+    <meta name="twitter:image:alt" content="AMP Like A Pro logo">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="AMP Like A Pro">
+    <meta property="og:image" content="assets/imgs/amp-like-a-pro-logo.png">
+    <meta property="og:url" content="https://amplikeapro.com">
+    <meta property="og:description"
+        content="AMP Like A Pro is an online course teaching Accelerated Mobile Pages development combining static and WordPress web pages into a 100% AMP valid website.">
+    <meta property="og:site_name" content="AMP Like A Pro">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <meta name="application-name" content="AMP Like A Pro">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/imgs/amp-like-a-pro-logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="AMP Like A Pro">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/imgs/amp-like-a-pro-logo.png">
+    <link rel="shortcut icon" href="assets/imgs/amp-like-a-pro-logo.png">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="assets/imgs/amp-like-a-pro-logo.png">
+    <meta name="RBOTOS" content="NOINDEX, NOFOLLOW">
+</head>
+
+<body>
+    <header class="fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4" id="">
+        <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger pr2" id="burger">
+            ☰</div> <a href="https://amplikeapro.com/" class="my0 mx-auto">
+            <div class="" id="adLogoSmall">
+                <amp-img src="assets/imgs/amp-like-a-pro-logo-wht.png" width="160" height="160" class="" layout="fixed"
+                    alt="AMP Like A Pro logo" id="adLogo"> </amp-img>
+            </div>
+        </a>
+    </header>
+    <amp-sidebar id="header-sidebar" class="ampstart-sidebar px3 flex flex-column" layout="nodisplay">
+        <div class="flex justify-start items-center ampstart-sidebar-header"> <a href="#" on="tap:header-sidebar.toggle"
+                class="ampstart-navbar-trigger items-start"> x </a></div>
+        <nav class="ampstart-sidebar-nav ampstart-nav"> <a href="//amplikeapro.com/"
+                class="block caps h4 py1 abe-primary"> AMP Like A Pro </a>
+            <ul class="list-reset m0 p0 caps h5">
+                <li class="ampstart-nav-item ampstart-nav-dropdown relative">
+                    <amp-accordion layout="container" disable-session-states class="ampstart-dropdown">
+                        <section>
+                            <header>Resources</header>
+                            <ul class="ampstart-dropdown-items list-reset m0 p0">
+                                <li class="ampstart-dropdown-item"> <a href="//amplikeapro.com/resources/"
+                                        class="text-decoration-none"> All Resources </a></li>
+                                <li class="ampstart-dropdown-item"> <a
+                                        href="//amplikeapro.com/resources/#webDevelopment" class="text-decoration-none">
+                                        Web Development </a></li>
+                                <li class="ampstart-dropdown-item"> <a href="//amplikeapro.com/resources/#ampSpecific"
+                                        class="text-decoration-none"> AMP Specific </a></li>
+                                <li class="ampstart-dropdown-item"> <a href="//amplikeapro.com/resources/#editingTools"
+                                        class="text-decoration-none"> Editing &amp; Other Tools </a></li>
+                                <li class="ampstart-dropdown-item"> <a href="//amplikeapro.com/resources/#wordPress"
+                                        class="text-decoration-none"> WordPress </a></li>
+                                <li class="ampstart-dropdown-item"> <a href="//amplikeapro.com/resources/#googleTools"
+                                        class="text-decoration-none"> Google Tools </a></li>
+                                <li class="ampstart-dropdown-item"> <a
+                                        href="//amplikeapro.com/resources/#affiliatePrograms"
+                                        class="text-decoration-none"> Affiliate Programs </a></li>
+                            </ul>
+                        </section>
+                    </amp-accordion>
+                </li>
+                <li class="ampstart-nav-item ampstart-nav-dropdown relative">
+                    <amp-accordion layout="container" disable-session-states class="ampstart-dropdown">
+                        <section>
+                            <header>Testimonials</header>
+                            <ul class="ampstart-dropdown-items list-reset m0 p0">
+                                <li class="ampstart-dropdown-item"> <a href="#testimonialIcons"
+                                        class="text-decoration-none"
+                                        on="tap:AMP.setState({allTestimonials: {currentTestimonial: 'Not only did this experience teach me the proper coding of web design and the process of building a running website, but it also taught me how to learn independently, how to stick with a problem and find ways of solving it, and perhaps most significantly, the experience taught me the skills that will enable me to continue to develop my web designing skills beyond the electronic classroom. Bisetts an excellent instructor who really knows his stuff. He’s truly enthusiastic about web design and about sharing his knowledge with his students. I really enjoyed his course and would definitely take it again!', currentReviewer: 'Jessica Lenz'}})">
+                                        Jessica Lenz </a></li>
+                                <li class="ampstart-dropdown-item"> <a href="#testimonialIcons"
+                                        class="text-decoration-none"
+                                        on="tap:AMP.setState({allTestimonials: {currentTestimonial: 'Not only did AMP Like A Pro teach me the skills and technique necessary to do well in the web design field, but through personalized learning opportunities, the course also encouraged and fostered ideas that allowed for independent success.', currentReviewer: 'McCoy Genfan'}})">
+                                        McCoy Genfan </a></li>
+                                <li class="ampstart-dropdown-item"> <a href="#testimonialIcons"
+                                        class="text-decoration-none"
+                                        on="tap:AMP.setState({allTestimonials: {currentTestimonial: 'AMP Like A Pro taught me every core value I expected and needed to learn. The ideas and knowledge I received are already helping me achieve my web development goals.', currentReviewer: 'Guy With No Name'}})">
+                                        Guy With No Name </a></li>
+                            </ul>
+                        </section>
+                    </amp-accordion>
+                </li>
+                <li class="ampstart-nav-item ampstart-nav-dropdown relative">
+                    <amp-accordion layout="container" disable-session-states class="ampstart-dropdown">
+                        <section>
+                            <header>Portfolio</header>
+                            <ul class="ampstart-dropdown-items list-reset m0 p0">
+                                <li class="ampstart-dropdown-item"> <a href="#featuredClients"
+                                        class="text-decoration-none"> Featured Clients </a></li>
+                            </ul>
+                        </section>
+                    </amp-accordion>
+                </li>
+                <li class="ampstart-nav-item ampstart-nav relative"> <a href="//amplikeapro.com/blog/articles/amp/">
+                        Blog </a></li>
+                <li class="ampstart-nav-item ampstart-nav-dropdown relative">
+                    <amp-accordion layout="container" disable-session-states class="ampstart-dropdown">
+                        <section>
+                            <header>Contact Us</header>
+                            <ul class="ampstart-dropdown-items list-reset m0 p0">
+                                <li class="ampstart-dropdown-item"> <a href="tel:4698502946"
+                                        class="text-decoration-none"> Call Us </a></li>
+                                <li class="ampstart-dropdown-item"> <a href="//amplikeapro.com/contact-us/"
+                                        class="text-decoration-none"> Contact Form </a></li>
+                            </ul>
+                        </section>
+                    </amp-accordion>
+                </li>
+            </ul>
+        </nav>
+    </amp-sidebar>
+    <div id="pageWrap">
+        <div id="videoBackground">
+            <div class="parallax-image-window">
+                <amp-position-observer on="scroll:parallaxTransition.seekTo(percent=event.percent)" layout="nodisplay">
+                </amp-position-observer>
+                <amp-video id="parallaxImage" width="480" height="270"
+                    src="https://amplikeapro.com/assets/videos/particles-lightning-bolt-amp-min.mp4" layout="responsive"
+                    autoplay loop> </amp-video>
+                <amp-animation id="parallaxTransition" layout="nodisplay">
+                    <script
+                        type="application/json">{"duration":"1","fill":"both","direction":"reverse","animations":[{"selector":"#parallaxImage","keyframes":[{"transform":"translateY(-30%)"}]}]}</script>
+                </amp-animation>
+                <amp-img src="assets/imgs/amp-like-a-pro-background-mobile.jpg" width="460" height="160" class=""
+                    layout="fill" alt="AMP Like A Pro background" id="ampBanner"> </amp-img>
+            </div>
+        </div>
+        <div class="carousel">
+            <div class="sm-hide">
+                <amp-carousel height="300" layout="fixed-height" type="slides" autoplay delay="5000">
+                    <div class="textBox">
+                        <div class="box">
+                            <h2>
+                                <amp-fit-text width="10" height="3" layout="responsive"> Accelerated Mobile Pages (AMP).
+                                </amp-fit-text>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <div class="box">
+                            <h2>
+                                <amp-fit-text width="10" height="3" layout="responsive"> When Page Load Speed Matters.
+                                </amp-fit-text>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <div class="box">
+                            <h2>
+                                <amp-fit-text width="10" height="3" layout="responsive"> Web Design Best Practice.
+                                </amp-fit-text>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <div class="box">
+                            <h2>
+                                <amp-fit-text width="10" height="3" layout="responsive"> This is Google's Baby.
+                                </amp-fit-text>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <div class="box">
+                            <h2>
+                                <amp-fit-text width="10" height="3" layout="responsive"> We Love Google, Don't You?
+                                </amp-fit-text>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <div class="box">
+                            <h2>
+                                <amp-fit-text width="10" height="3" layout="responsive"> A Mobile-First Index Win.
+                                </amp-fit-text>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <div class="box">
+                            <h2>
+                                <amp-fit-text width="10" height="3" layout="responsive"> AMP Like A Pro. </amp-fit-text>
+                            </h2>
+                        </div>
+                    </div>
+                </amp-carousel>
+            </div>
+            <div class="xs-hide md-hide lg-hide">
+                <amp-carousel height="300" layout="fixed-height" type="slides" autoplay delay="5000">
+                    <div class="textBox">
+                        <div class="box">
+                            <h2>
+                                <amp-fit-text width="30" height="3" layout="responsive"> Accelerated Mobile Pages (AMP).
+                                </amp-fit-text>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <div class="box">
+                            <h2>
+                                <amp-fit-text width="30" height="3" layout="responsive"> When Page Load Speed Matters.
+                                </amp-fit-text>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <div class="box">
+                            <h2>
+                                <amp-fit-text width="30" height="3" layout="responsive"> Web Design Best Practice.
+                                </amp-fit-text>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <div class="box">
+                            <h2>
+                                <amp-fit-text width="30" height="3" layout="responsive"> This is Google's Baby.
+                                </amp-fit-text>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <div class="box">
+                            <h2>
+                                <amp-fit-text width="30" height="3" layout="responsive"> We Love Google, Don't You?
+                                </amp-fit-text>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <div class="box">
+                            <h2>
+                                <amp-fit-text width="30" height="3" layout="responsive"> A Mobile-First Index Win.
+                                </amp-fit-text>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <div class="box">
+                            <h2>
+                                <amp-fit-text width="30" height="3" layout="responsive"> AMP Like A Pro. </amp-fit-text>
+                            </h2>
+                        </div>
+                    </div>
+                </amp-carousel>
+            </div>
+            <div id="who">
+                <h3 class="pb3"> What's In It For You?</h3>
+            </div>
+        </div>
+        <main class="col col-12">
+            <div class="col col-12" id="container">
+                <div class="" id="theFold">
+                    <div class="" id="ampstickmobile">
+                        <amp-position-observer on="scroll:fadeTransition.seekTo(percent=event.percent)"
+                            intersection-ratios="0" layout="nodisplay"> </amp-position-observer>
+                        <amp-position-observer on="enter:slideTransition1.start;" intersection-ratios="0.5"
+                            layout="nodisplay"> </amp-position-observer>
+                        <amp-img id="ampStick" src="assets/imgs/amp-pro-stick-gradiant.jpg" width="3" height="200"
+                            class="" layout="fixed" alt="AMP Like a Pro Stick of Gradiant Blue"> </amp-img>
+                        <amp-animation id="fadeTransition" layout="nodisplay">
+                            <script
+                                type="application/json">{"duration":"1","fill":"both","direction":"reverse","animations":[{"selector":"#ampStick","keyframes":[{"opacity":"0","offset":0},{"opacity":"1","offset":0.4},{"opacity":"1","offset":0.6},{"opacity":"0","offset":1}]}]}</script>
+                        </amp-animation>
+                        <amp-animation id="slideTransition1" layout="nodisplay">
+                            <script
+                                type="application/json">{"duration":"500ms","fill":"both","easing":"ease","iterations":"1","animations":[{"selector":"#ampStick","keyframes":[{"transform":"translateY(-10rem)"},{"transform":"translateY(0rem)"}]}]}</script>
+                        </amp-animation>
+                    </div>
+                    <section class="col col-12 wwdo" id="wwdo">
+                        <div id="wwdo-animation">
+                            <amp-position-observer on="scroll:fadeTransitionwwdo.seekTo(percent=event.percent)"
+                                intersection-ratios="0" layout="nodisplay"> </amp-position-observer>
+                            <amp-animation id="fadeTransitionwwdo" layout="nodisplay">
+                                <script
+                                    type="application/json">{"duration":"1","fill":"both","direction":"reverse","animations":[{"selector":".wwdo","keyframes":[{"opacity":"1","offset":0},{"opacity":"1","offset":0.2},{"opacity":"1","offset":0.8},{"opacity":"0","offset":1}]}]}</script>
+                            </amp-animation>
+                            <div class="col xs-col xs-col-12 md-col-5 wwdo" id="wwdo-h3">
+                                <h3>EVERY Business Needs AMP!</h3>
+                            </div>
+                        </div>
+                        <div class="col xs-col xs-col-12 md-col-7" id="wwdoText">
+                            <amp-position-observer on="scroll:fadeTransitionwwdo.seekTo(percent=event.percent)"
+                                intersection-ratios="0" layout="nodisplay"> </amp-position-observer>
+                            <amp-animation id="fadeTransitionwwdo" layout="nodisplay">
+                                <script
+                                    type="application/json">{"duration":"1","fill":"both","direction":"reverse","animations":[{"selector":".wwdo","keyframes":[{"opacity":"1","offset":0},{"opacity":"1","offset":0.2},{"opacity":"1","offset":0.8},{"opacity":"0","offset":1}]}]}</script>
+                            </amp-animation>
+                            <amp-fit-text class="wwdo xs-hide md-hide lg-hide" width="100" height="85"
+                                layout="responsive">
+                                <p> The Accelerated Mobile Pages project that Google started in 2015 has finally begun
+                                    to gail momentum.</p>
+                                <p> No longer is simply having a mobile-responsive website sufficient. If the web page
+                                    loads slowly (if it takes more than 7 seconds to load), it will get <b>hammered</b>
+                                    by the competition.</p>
+                                <p> Just a little FYI from Google themselves:</p>
+                                <blockquote> "The average time it takes to fully load a mobile page is 22 seconds
+                                    according to a new analysis. Yet 53% of mobile site visitors leave a page that takes
+                                    longer than three econds to load. That's a big problem." <br> <br> think with Google
+                                    - <a
+                                        href="https://think.storage.googleapis.com/docs/mobile-page-speed-new-industry-benchmarks.pdf">
+                                        Find Out How You Stack Up to New Industry Benchmarks for Mobile Page Speed </a>
+                                </blockquote>
+                            </amp-fit-text>
+                            <amp-fit-text class="wwdo xs-hide sm-hide" width="100" height="65" layout="responsive">
+                                <p> The Accelerated Mobile Pages project that Google started in 2015 has finally begun
+                                    to gail momentum.</p>
+                                <p> No longer is simply having a mobile-responsive website sufficient. If the web page
+                                    loads slowly (if it takes more than 7 seconds to load), it will get <b>hammered</b>
+                                    by the competition.</p>
+                                <p> Just a little FYI from Google themselves:</p>
+                                <blockquote> "The average time it takes to fully load a mobile page is 22 seconds
+                                    according to a new analysis. Yet 53% of mobile site visitors leave a page that takes
+                                    longer than three econds to load. That's a big problem." <br> <br> think with Google
+                                    - <a
+                                        href="https://think.storage.googleapis.com/docs/mobile-page-speed-new-industry-benchmarks.pdf">
+                                        Find Out How You Stack Up to New Industry Benchmarks for Mobile Page Speed </a>
+                                </blockquote>
+                            </amp-fit-text>
+                            <amp-fit-text class="wwdo sm-hide md-hide lg-hide" width="100" height="205"
+                                layout="responsive">
+                                <p> The Accelerated Mobile Pages project that Google started in 2015 has finally begun
+                                    to gail momentum.</p>
+                                <p> No longer is simply having a mobile-responsive website sufficient. If the web page
+                                    loads slowly (if it takes more than 7 seconds to load), it will get <b>hammered</b>
+                                    by the competition.</p>
+                                <p> Just a little FYI from Google themselves:</p>
+                                <blockquote> "The average time it takes to fully load a mobile page is 22 seconds
+                                    according to a new analysis. Yet 53% of mobile site visitors leave a page that takes
+                                    longer than three econds to load. That's a big problem." <br> <br> think with Google
+                                    - <a
+                                        href="https://think.storage.googleapis.com/docs/mobile-page-speed-new-industry-benchmarks.pdf">
+                                        Find Out How You Stack Up to New Industry Benchmarks for Mobile Page Speed </a>
+                                </blockquote>
+                            </amp-fit-text>
+                        </div>
+                    </section>
+                </div>
+                <div class="col col-12" id="featured">
+                    <amp-position-observer on="scroll:fadeTransitionfc.seekTo(percent=event.percent)"
+                        intersection-ratios="0" layout="nodisplay"> </amp-position-observer>
+                    <amp-position-observer on="enter:slideTransitionfc.start;" intersection-ratios="0.2"
+                        layout="nodisplay"> </amp-position-observer>
+                    <amp-animation id="fadeTransitionfc" layout="nodisplay">
+                        <script
+                            type="application/json">{"duration":"1","fill":"both","direction":"reverse","animations":[{"selector":"#fc","keyframes":[{"opacity":"1","offset":0},{"opacity":"1","offset":0.4},{"opacity":"1","offset":0.6},{"opacity":"0","offset":1}]}]}</script>
+                    </amp-animation>
+                    <amp-animation id="slideTransitionfc" layout="nodisplay">
+                        <script
+                            type="application/json">{"duration":"500ms","fill":"both","easing":"ease","iterations":"1","animations":[{"selector":".featuredCard","keyframes":[{"transform":"translateX(-5rem)"},{"transform":"translateX(0rem)"}]}]}</script>
+                    </amp-animation>
+                    <div id="fc">
+                        <div class="" id="featuredClients">
+                            <h2> Featured Clients</h2>
+                            <h4> See what can be done with AMP</h4>
+                            <div class="mb4">
+                                <p></p>
+                            </div>
+                            <div class="abe-examples flex flex-wrap">
+                                <div
+                                    class="ampstart-card abe-sample-card flex flex-column flex-auto p1 mb1 featuredCard center">
+                                    <amp-img id="client1"
+                                        src="assets/imgs/featured-clients/mobile-tablet-desktop-old-glory-ranch.jpg"
+                                        width="1" height="1" class="" layout="responsive" alt="Old Glory Ranch">
+                                    </amp-img>
+                                    <div class="cardTitle">
+                                        <h3 class="center"> Old Glory Ranch</h3>
+                                        <div class="abe-sample-card-actions"> <a
+                                                class="ampstart-btn caps text-decoration-none inline-block"
+                                                href="https://oldgloryranch.com/wp-content/amp/" target="_blank"> Check
+                                                it out </a></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="ampstart-card abe-sample-card flex flex-column flex-auto p1 mb1 featuredCard center">
+                                    <amp-img id="client1"
+                                        src="assets/imgs/featured-clients/mobile-tablet-desktop-ross-and-shoalmire.jpg"
+                                        width="1" height="1" class="" layout="responsive" alt="Ross and Shoalmire">
+                                    </amp-img>
+                                    <div class="cardTitle">
+                                        <h3 class="center"> Ross and Shoalmire</h3>
+                                        <div class="abe-sample-card-actions"> <a
+                                                class="ampstart-btn caps text-decoration-none inline-block"
+                                                href="https://rossandshoalmire.com" target="_blank"> Check it out </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="ampstart-card abe-sample-card flex flex-column flex-auto p1 mb1 featuredCard center xs-hide sm-hide md-hide">
+                                    <amp-img id="client1"
+                                        src="assets/imgs/featured-clients/mobile-tablet-desktop-hill-country-land-improvement.jpg"
+                                        width="1" height="1" class="" layout="responsive"
+                                        alt="Hill Country Land Improvement"> </amp-img>
+                                    <div class="cardTitle">
+                                        <h3 class="center"> Hill Country Land Improvement</h3>
+                                        <div class="abe-sample-card-actions"> <a
+                                                class="ampstart-btn caps text-decoration-none inline-block"
+                                                href="https://hillcountrylandimprovement.com/amp/landing/private-drive/"
+                                                target="_blank"> Check it out </a></div>
+                                    </div>
+                                </div>
+                                <div class="abe-sample-card abe-sample-card-filler flex-auto px1 mr1"></div>
+                                <div class="abe-sample-card abe-sample-card-filler flex-auto px1 mr1"></div>
+                                <div class="abe-sample-card abe-sample-card-filler flex-auto px1 mr1"></div>
+                                <div class="abe-sample-card abe-sample-card-filler flex-auto px1 mr1"></div>
+                                <div class="abe-sample-card abe-sample-card-filler flex-auto px1 mr1"></div>
+                                <div class="abe-sample-card abe-sample-card-filler flex-auto px1 mr1"></div>
+                                <div class="abe-sample-card abe-sample-card-filler flex-auto px1 mr1"></div>
+                            </div>
+                            <div class="" id="seeMore">
+                                <amp-accordion layout="container" disable-session-states>
+                                    <section id="seeMore-expanded">
+                                        <h3
+                                            class="ampstart-btn caps text-decoration-none inline-block center pl1 pt1 pb1 mt4 mb4">
+                                            <span class="show-more"> See More! </span> <span class="show-less"> See
+                                                Less! </span></h3>
+                                        <figure>
+                                            <div class="abe-examples flex flex-wrap mb4">
+                                                <div
+                                                    class="ampstart-card abe-sample-card flex flex-column flex-auto p1 mb1 featuredCard center lg-hide">
+                                                    <amp-img id="client1"
+                                                        src="assets/imgs/featured-clients/mobile-tablet-desktop-hill-country-land-improvement.jpg"
+                                                        width="1" height="1" class="" layout="responsive"
+                                                        alt="Hill Country Land Improvement"> </amp-img>
+                                                    <div class="cardTitle">
+                                                        <h3 class="center"> Hill Country Land Improvement</h3>
+                                                        <div class="abe-sample-card-actions"> <a
+                                                                class="ampstart-btn caps text-decoration-none inline-block"
+                                                                href="https://hillcountrylandimprovement.com/amp/landing/private-drive/"
+                                                                target="_blank"> Check it out </a></div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="ampstart-card abe-sample-card flex flex-column flex-auto p1 mb1 featuredCard center">
+                                                    <amp-img id="client1"
+                                                        src="assets/imgs/featured-clients/mobile-tablet-desktop-broad-nib-creek-studio.jpg"
+                                                        width="1" height="1" class="" layout="responsive"
+                                                        alt="Broad Nib Creek Studio"> </amp-img>
+                                                    <div class="cardTitle">
+                                                        <h3 class="center"> Broad Nib Creek Studio</h3>
+                                                        <div class="abe-sample-card-actions"> <a
+                                                                class="ampstart-btn caps text-decoration-none inline-block"
+                                                                href="https://broadnibcreekstudio.com" target="_blank">
+                                                                Check it out </a></div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="ampstart-card abe-sample-card flex flex-column flex-auto p1 mb1 featuredCard center">
+                                                    <amp-img id="client1"
+                                                        src="assets/imgs/featured-clients/mobile-tablet-desktop-austintatious-design.jpg"
+                                                        width="1" height="1" class="" layout="responsive"
+                                                        alt="Austintatious Design Co."> </amp-img>
+                                                    <div class="cardTitle">
+                                                        <h3 class="center"> Austintatious Design Co.</h3>
+                                                        <div class="abe-sample-card-actions"> <a
+                                                                class="ampstart-btn caps text-decoration-none inline-block"
+                                                                href="https://austintatiousdesign.co/amp/"
+                                                                target="_blank"> Check it out </a></div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="ampstart-card abe-sample-card flex flex-column flex-auto p1 mb1 featuredCard center">
+                                                    <amp-img id="client1"
+                                                        src="assets/imgs/featured-clients/mobile-tablet-desktop-aging-insight.jpg"
+                                                        width="1" height="1" class="" layout="responsive"
+                                                        alt="Aging Insight"> </amp-img>
+                                                    <div class="cardTitle">
+                                                        <h3 class="center"> Aging Insight</h3>
+                                                        <div class="abe-sample-card-actions"> <a
+                                                                class="ampstart-btn caps text-decoration-none inline-block"
+                                                                href="https://aginginsight.com/amp/homepage/amp/"
+                                                                target="_blank"> Check it out </a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                    </section>
+                                </amp-accordion>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="col xs-col xs-col-12 sm-col-12" id="greyBack">
+            <div class="" id="gradiantLeft">
+                <amp-position-observer on="scroll:fadeTransition2.seekTo(percent=event.percent)" intersection-ratios="0"
+                    layout="nodisplay"> </amp-position-observer>
+                <amp-position-observer on="enter:slideTransition2.start;" intersection-ratios="0.5" layout="nodisplay">
+                </amp-position-observer>
+                <amp-img media="(max-width:684px)" id="ampStick2" src="assets/imgs/amp-pro-stick-gradiant.jpg" width="3"
+                    height="80" class="" layout="fixed" alt="AMP Like a Pro Stick of Gradiant Blue"> </amp-img>
+                <amp-img media="(min-width:685px)" id="ampStick2" src="assets/imgs/amp-pro-stick-gradiant.jpg" width="3"
+                    height="200" class="" layout="fixed" alt="AMP Like a Pro Stick of Gradiant Blue"> </amp-img>
+                <amp-animation id="fadeTransition2" layout="nodisplay">
+                    <script
+                        type="application/json">{"duration":"1","fill":"both","direction":"reverse","animations":[{"selector":"#ampStick","keyframes":[{"opacity":"0","offset":0},{"opacity":"1","offset":0.4},{"opacity":"1","offset":0.6},{"opacity":"0","offset":1}]}]}</script>
+                </amp-animation>
+                <amp-animation id="slideTransition2" layout="nodisplay">
+                    <script
+                        type="application/json">{"duration":"500ms","fill":"both","easing":"ease","iterations":"1","animations":[{"selector":"#ampStick","keyframes":[{"transform":"translateY(-10rem)"},{"transform":"translateY(0rem)"}]}]}</script>
+                </amp-animation>
+            </div>
+            <section class="col col-10" id="getErDone">
+                <div class="col xs-col xs-col-10 sm-col-5" id="gedLeft">
+                    <amp-position-observer on="scroll:fadeTransitionged.seekTo(percent=event.percent)"
+                        intersection-ratios="0" layout="nodisplay"> </amp-position-observer>
+                    <amp-animation id="fadeTransitionged" layout="nodisplay">
+                        <script
+                            type="application/json">{"duration":"1","fill":"both","direction":"reverse","animations":[{"selector":".ged","keyframes":[{"opacity":"1","offset":0},{"opacity":"1","offset":0.4},{"opacity":"1","offset":0.6},{"opacity":"0","offset":1}]}]}</script>
+                    </amp-animation>
+                    <h4 class="www-heading pb4 mb2 relative ged">#AMPLikeAPro</h3>
+                </div>
+                <div class="col xs-col xs-col-10 sm-col-7" id="gedRight">
+                    <amp-position-observer on="scroll:fadeTransitionged.seekTo(percent=event.percent)"
+                        intersection-ratios="0" layout="nodisplay"> </amp-position-observer>
+                    <amp-animation id="fadeTransitionged" layout="nodisplay">
+                        <script
+                            type="application/json">{"duration":"1","fill":"both","direction":"reverse","animations":[{"selector":".ged","keyframes":[{"opacity":"1","offset":0},{"opacity":"1","offset":0.4},{"opacity":"1","offset":0.6},{"opacity":"0","offset":1}]}]}</script>
+                    </amp-animation>
+                    <h2 class="www-heading mb2 relative ged"> Who Should learn to AMP Like A Pro?</h2>
+                    <amp-fit-text class="ged xs-hide md-hide lg-hide" width="100" height="85" layout="responsive"
+                        id="ipad">
+                        <p> Whether you're a hobbiest just looking to build your best friend a killer fast site, an
+                            experienced front-end developer looking to expand your skill set, or an entrepeneur hoping
+                            to get in front of the newest and what will soon be the most sought after web development
+                            method by virtually ALL small, medium, and large businesses needing to maintain a successful
+                            online presence, AMP is for you!</p>
+                        <p> This course will not only teach you how to build an AMP valid website, it will help you
+                            expand your knowledge base of CSS3, HTML5, WordPress integration and modification, with a
+                            smattering of PHP.</p>
+                        <p> By the end of this course, you will be able to build AMP versions of pre-existing webpages
+                            or full blown AMPed websites that look beautiful across all viewable devices.</p>
+                    </amp-fit-text>
+                    <amp-fit-text class="ged xs-hide sm-hide" width="100" height="65" layout="responsive" id="desktop">
+                        <p> Whether you're a hobbiest just looking to build your best friend a killer fast site, an
+                            experienced front-end developer looking to expand your skill set, or an entrepeneur hoping
+                            to get in front of the newest and what will soon be the most sought after web development
+                            method by virtually ALL small, medium, and large businesses needing to maintain a successful
+                            online presence, AMP is for you!</p>
+                        <p> This course will not only teach you how to build an AMP valid website, it will help you
+                            expand your knowledge base of CSS3, HTML5, WordPress integration and modification, with a
+                            smattering of PHP.</p>
+                        <p> By the end of this course, you will be able to build AMP versions of pre-existing webpages
+                            or full blown AMPed websites that look beautiful across all viewable devices.</p>
+                    </amp-fit-text>
+                    <amp-fit-text class="ged sm-hide md-hide lg-hide" width="100" height="205" layout="responsive"
+                        id="mobile-tablet">
+                        <p> Whether you're a hobbiest just looking to build your best friend a killer fast site, an
+                            experienced front-end developer looking to expand your skill set, or an entrepeneur hoping
+                            to get in front of the newest and what will soon be the most sought after web development
+                            method by virtually ALL small, medium, and large businesses needing to maintain a successful
+                            online presence, AMP is for you!</p>
+                        <p> This course will not only teach you how to build an AMP valid website, it will help you
+                            expand your knowledge base of CSS3, HTML5, WordPress integration and modification, with a
+                            smattering of PHP.</p>
+                        <p> By the end of this course, you will be able to build AMP versions of pre-existing webpages
+                            or full blown AMPed websites that look beautiful across all viewable devices.</p>
+                    </amp-fit-text>
+                </div>
+            </section>
+            <section class="col col-12" id="getErDone2">
+                <div class="col xs-col-12" id="ctaBar">
+                    <div class="col xs-col-12 md-col-8" id="ctaLeft"> <b>Want to become a full fledged AMP
+                            developer?</b> Subscribe now and I'll send you the first 6 lectures for free and give you a
+                        surprise discount too!</div>
+                    <div class="col xs-col-12 md-col-4" id="ctaRight">
+                        <figure class="m0 mt2 relative mb2 center" id="free">
+                            <amp-accordion>
+                                <section>
+                                    <h4 class="center pt1">Send me 6 free lectures!</h4>
+                                    <figure>
+                                        <amp-iframe width="400" height="190" sandbox="allow-scripts allow-same-origin"
+                                            layout="responsive" allowfullscreen frameborder="0"
+                                            src="https://forms.amplikeapro.com/join-now">
+                                            <amp-img layout="fixed-height" height="60px" placeholder
+                                                src="assets/imgs/amp-like-a-pro-min.jpg"> </amp-img>
+                                        </amp-iframe>
+                                    </figure>
+                                </section>
+                            </amp-accordion>
+                        </figure>
+                    </div>
+                </div>
+                <div class="" id="gradiantLeft2">
+                    <amp-position-observer on="scroll:fadeTransition3.seekTo(percent=event.percent)"
+                        intersection-ratios="0" layout="nodisplay"> </amp-position-observer>
+                    <amp-img media="(max-width:684px)" id="ampStick3" src="assets/imgs/amp-pro-stick-gradiant.jpg"
+                        width="3" height="80" class="" layout="fixed" alt="AMP Like a Pro Stick of Gradiant Blue">
+                    </amp-img>
+                    <amp-img media="(min-width:685px)" id="ampStick3" src="assets/imgs/amp-pro-stick-gradiant.jpg"
+                        width="3" height="200" class="" layout="fixed" alt="AMP Like a Pro Stick of Gradiant Blue">
+                    </amp-img>
+                    <amp-animation id="fadeTransition3" layout="nodisplay">
+                        <script
+                            type="application/json">{"duration":"1","fill":"both","direction":"reverse","animations":[{"selector":"#ampStick3","keyframes":[{"opacity":"1","offset":0},{"opacity":"1","offset":0.4},{"opacity":"1","offset":0.6},{"opacity":"0","offset":1}]}]}</script>
+                    </amp-animation>
+                </div>
+                <div class="col xs-col xs-col-10 sm-col-5" id="gedLeft2">
+                    <amp-position-observer on="scroll:fadeTransitionged2.seekTo(percent=event.percent)"
+                        intersection-ratios="0" layout="nodisplay"> </amp-position-observer>
+                    <amp-animation id="fadeTransitionged2" layout="nodisplay">
+                        <script
+                            type="application/json">{"duration":"1","fill":"both","direction":"reverse","animations":[{"selector":"#ged2","keyframes":[{"opacity":"1","offset":0},{"opacity":"1","offset":0.4},{"opacity":"1","offset":0.6},{"opacity":"0","offset":1}]}]}</script>
+                    </amp-animation>
+                    <h4 class="www-heading pb4 mb2 relative ged" id="ged2">#theAMPway</h3>
+                </div>
+                <div class="col xs-col xs-col-10 sm-col-7" id="gedRight2">
+                    <amp-position-observer on="scroll:fadeTransitionged3.seekTo(percent=event.percent)"
+                        intersection-ratios="0" layout="nodisplay"> </amp-position-observer>
+                    <amp-animation id="fadeTransitionged3" layout="nodisplay">
+                        <script
+                            type="application/json">{"duration":"1","fill":"both","direction":"reverse","animations":[{"selector":"#ged3","keyframes":[{"opacity":"1","offset":0},{"opacity":"1","offset":0.4},{"opacity":"1","offset":0.6},{"opacity":"0","offset":1}]}]}</script>
+                    </amp-animation>
+                    <div id="ged3">
+                        <h2 class="www-heading mb2 relative ged"> How Will Learning AMP Increase Your Bottom Line?</h2>
+                        <div class="ged">
+                            <hr>
+                            <amp-lightbox id="easyToSell" layout="nodisplay">
+                                <div class="lightbox" on="tap:easyToSell.close" role="button" tabindex="0">
+                                    <div class="col xs-col-12 lightboxOuter">
+                                        <div class="lightboxTitle mb2 center">
+                                            <h3>Every business needs AMP!</h3>
+                                        </div>
+                                        <div class="col xs-col-12 lightboxContent">
+                                            <p>Even if they've already got a beautiful, fully functioning website,
+                                                chances are incredibly high that their website is not as FAST as Google
+                                                wants it to be for the best ranking.</p>
+                                            <p>So, all you have to do is a bit of research before going in to meet
+                                                whoever makes exectuive decisions to determine the current website's
+                                                page load speed.</p>
+                                            <p>If it takes over 8 seconds, you've got an easy upgrade to sell them!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </amp-lightbox>
+                            <amp-lightbox id="reduceLoadSpeed" layout="nodisplay">
+                                <div class="lightbox" on="tap:reduceLoadSpeed.close" role="button" tabindex="0">
+                                    <div class="col xs-col-12 lightboxOuter">
+                                        <div class="lightboxTitle mb2 center">
+                                            <h3>Every business needs AMP!</h3>
+                                        </div>
+                                        <div class="col xs-col-12 lightboxContent">
+                                            <p>According to <a
+                                                    href="https://think.storage.googleapis.com/docs/mobile-page-speed-new-industry-benchmarks.pdf">think
+                                                    with Google</a>, the average page load speed in 2018 is
+                                                approximately 22 seconds.</p>
+                                            <p>Let that sink in... 22 seconds!</p>
+                                            <p>If you have a choice between waiting 3 seconds for a page to load or 22
+                                                seconds, which are you more likely to visit?</p>
+                                            <p>That's what Google thinks too. In fact, in July 2018, they rolled out an
+                                                algorythm that gave NEGATIVE RANKING to those pages that load slowly.
+                                                And while they have not yet (though I suspect this too will change in
+                                                the very near future) given AMPed pages a ranking BOOST, if the
+                                                competition is being hit negatively, that is in a way a sort-of increase
+                                                for you (assuming your pages are AMPed) right?</p>
+                                            <p>To me, it's a no brainer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </amp-lightbox>
+                            <amp-lightbox id="wordPressUsage" layout="nodisplay">
+                                <div class="lightbox" on="tap:wordPressUsage.close" role="button" tabindex="0">
+                                    <div class="col xs-col-12 lightboxOuter">
+                                        <div class="lightboxTitle mb2 center">
+                                            <h3>Every business needs AMP!</h3>
+                                        </div>
+                                        <div class="col xs-col-12 lightboxContent">
+                                            <p><a href="https://w3techs.com/technologies/overview/content_management/all"
+                                                    target="_blank">According to W3 Techs</a>, WordPress is dominating
+                                                the Content Management System market.</p>
+                                            <p>And with Content Marketing considered to be one of the most important
+                                                factors in high search rankings by just about every digital marketing
+                                                expert available (a la, Neil Patel, Rand Fishking, Brian Dean),
+                                                WordPress isn't likely to lose any ground in this arena any time soon.
+                                            </p>
+                                            <p>That's why I teach you how to implement the current Google backed AMP
+                                                plugin for WordPress, and how to hack it apart to squeeze every last
+                                                drop out of the WP package while creating a beautiful, streamlined,
+                                                cross-site consistent feel, all while maintaining AMP validation!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </amp-lightbox>
+                            <amp-lightbox id="googleLovesAMP" layout="nodisplay">
+                                <div class="lightbox" on="tap:googleLovesAMP.close" role="button" tabindex="0">
+                                    <div class="col xs-col-12 lightboxOuter">
+                                        <div class="lightboxTitle mb2 center lbSmall">
+                                            <h3>Every business needs AMP!</h3>
+                                        </div>
+                                        <div class="col xs-col-12 lightboxContent lbSmall">
+                                            <p>The AMP Project was first launched by Google in October 2015 with several
+                                                well known publishers and technologies (Twitter, Pinterest, LinkedIn,
+                                                ...) on board from its inception.</p>
+                                            <p>AMP pages are incredibly fast because they are all built on the same AMP
+                                                framework consisting of only 3 components: AMP HTML, AMP JavaScript, and
+                                                AMP cache - this is where Google really comes in to play!</p>
+                                            <p>Because an AMPed page can only validate if it is built following Google's
+                                                rather strict no-external-sheets policy and NO JavaScript not built-in
+                                                to AMP, Google knows that the page will be built using their own
+                                                best-practice policies!</p>
+                                            <p> As a reward for building within the constraints of AMP, not only do
+                                                those pages load very fast, Google even caches all indexed AMP valid
+                                                pages and serves the cahced version if discovered by a mobile searcher.
+                                            </p>
+                                            <p> This means... Google serves the initial AMPed page from their own
+                                                server... in short, the load time is virtually instantaneous! Think, by
+                                                the time you've taken your finger off the link in the search page
+                                                result, it has pretty much already loaded!</p>
+                                            <p> Google loves Google and if you want to be found, demonstrating your own
+                                                love for Google is probably kind of a good idea.</p>
+                                            <p>Need I say more?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </amp-lightbox>
+                            <amp-lightbox id="developersCharge" layout="nodisplay">
+                                <div class="lightbox" on="tap:developersCharge.close" role="button" tabindex="0">
+                                    <div class="col xs-col-12 lightboxOuter">
+                                        <div class="lightboxTitle mb2 center lbSmall">
+                                            <h3>Every business needs AMP!</h3>
+                                        </div>
+                                        <div class="col xs-col-12 lightboxContent lbSmall">
+                                            <p>While web developers able to build out a pre-built WordPress theme are a
+                                                dime a dozen these days, few are experienced enough to work within the
+                                                code.</p>
+                                            <p>When you have the skills to build uber fast AMPed pages AND seamlessly
+                                                integrate them with a content management system like WordPress without
+                                                losing ANY AMP validation across your site, you have far surpassed your
+                                                neighbor wanna-be freelance web developers.</p>
+                                            <p>Because you can do what few others can, you get to charge a very
+                                                competitively high rate straight out of the gate!</p>
+                                            <p> Determine your strengths and weaknesses, build a handful of sites for
+                                                cheap to hone those few remaining skills, then get out there and set
+                                                your own rates.</p>
+                                            <p> This course will give you a very well rounded set of skills that few
+                                                possess and put you in the forefront for what will soon become the
+                                                industry standard!</p>
+                                            <p> Nothing is stopping you!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </amp-lightbox><a on="tap:easyToSell" role="button" tabindex="0">
+                                <h4>AMPed pages are easy to sell.</h4>
+                                <amp-img id="ampStickArrow" src="assets/imgs/amp-pro-arrow-gradiant.png" width="60"
+                                    height="10" class="" layout="fixed" alt="AMP Like A Pro stick of gradiant blue">
+                                </amp-img>
+                            </a>
+                            <hr> <a on="tap:reduceLoadSpeed" role="button" tabindex="0">
+                                <h4>AMPed pages reduce load speed by 733%.</h4>
+                                <amp-img id="ampStickArrow" src="assets/imgs/amp-pro-arrow-gradiant.png" width="60"
+                                    height="10" class="" layout="fixed" alt="AMP Like A Pro stick of gradiant blue">
+                                </amp-img>
+                            </a>
+                            <hr> <a on="tap:wordPressUsage" role="button" tabindex="0">
+                                <h4>WordPress is used by 29.9% of all websites in 2018.</h4>
+                                <amp-img id="ampStickArrow" src="assets/imgs/amp-pro-arrow-gradiant.png" width="60"
+                                    height="10" class="" layout="fixed" alt="AMP Like A Pro stick of gradiant blue">
+                                </amp-img>
+                            </a>
+                            <hr> <a on="tap:googleLovesAMP" role="button" tabindex="0">
+                                <h4>Google Loves AMP.</h4>
+                                <amp-img id="ampStickArrow" src="assets/imgs/amp-pro-arrow-gradiant.png" width="60"
+                                    height="10" class="" layout="fixed" alt="AMP Like A Pro stick of gradiant blue">
+                                </amp-img>
+                            </a>
+                            <hr> <a on="tap:developersCharge" role="button" tabindex="0">
+                                <h4>AMP Developers often charge up to $150/hr.</h4>
+                                <amp-img id="ampStickArrow" src="assets/imgs/amp-pro-arrow-gradiant.png" width="60"
+                                    height="10" class="" layout="fixed" alt="AMP Like A Pro stick of gradiant blue">
+                                </amp-img>
+                            </a>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="col col-12 bbar" id="bbar">
+            <div class="col col-10" id="bbarContent">
+                <div>
+                    <amp-position-observer on="scroll:fadeTransitionbbar.seekTo(percent=event.percent)"
+                        intersection-ratios="0" layout="nodisplay"> </amp-position-observer>
+                    <amp-animation id="fadeTransitionbbar" layout="nodisplay">
+                        <script
+                            type="application/json">{"duration":"1","fill":"both","direction":"reverse","animations":[{"selector":".bbar","keyframes":[{"opacity":"1","offset":0},{"opacity":"1","offset":0.4},{"opacity":"1","offset":0.6},{"opacity":"0","offset":1}]}]}</script>
+                    </amp-animation>
+                    <div class="col sm-col-12 md-col-6 bbar" id="courseVideo">
+                        <h3>What This Course Covers</h3>
+                        <div class="col col-12" id="introVideo">
+                            <h4>Watch the course intro video</h4>
+                            <amp-youtube data-videoid="wGQzCjw6obw" layout="responsive" width="480" height="270">
+                                <amp-img src="assets/imgs/amp-like-a-pro-min.jpg" placeholder layout="fill" />
+                            </amp-youtube>
+                        </div>
+                    </div>
+                </div>
+                <div class="col xs-colxs-col-12 sm-col-12 md-col-6" id="bbarText">
+                    <div class="emptyClass">
+                        <h4> You'll learn to ROCK ALL of these topics and more:</h4>
+                        <div class="col col-12"> &nbsp;</div>
+                        <div class="col col-2">
+                            <div class="col col-12 courseIcons">
+                                <amp-img id="htmlIcon" src="assets/imgs/icons/html-icon.png" width="2" height="3"
+                                    class="" layout="responsive" alt="HTML icon"> </amp-img>
+                            </div>
+                            <div class="col col-12 courseIcons">
+                                <amp-img id="htmlIcon" src="assets/imgs/icons/css-icon.png" width="2" height="3"
+                                    class="" layout="responsive" alt="CSS icon"> </amp-img>
+                            </div>
+                            <div class="col col-12 courseIcons">
+                                <amp-img id="htmlIcon" src="assets/imgs/icons/javascript-icon.png" width="2" height="3"
+                                    class="" layout="responsive" alt="JS icon"> </amp-img>
+                            </div>
+                            <div class="col col-12 courseIcons">
+                                <amp-img id="htmlIcon" src="assets/imgs/icons/php-icon.png" width="2" height="3"
+                                    class="" layout="responsive" alt="PHP icon"> </amp-img>
+                            </div>
+                            <div class="col col-12 courseIcons">
+                                <amp-img id="htmlIcon" src="assets/imgs/icons/wordpress-icon.png" width="2" height="3"
+                                    class="" layout="responsive" alt="WordPress icon"> </amp-img>
+                            </div>
+                        </div>
+                        <div class="col col-10 xs-hide" id="codeBlock">
+                            <amp-fit-text class="bbar" width="100" height="125" layout="responsive">
+                                <code><ul><li>&lt;HTML5&gt;</li><li>AMP HTML - &lt;<span class="hotPink">html</span> ⚡ <span class="lightGreen">lang</span><span class="yellow">="en"</span>&gt;<ul><li>&lt;<span class="hotPink">amp-img</span>&gt;</li><li>&lt;<span class="hotPink">amp-iframe</span>&gt;</li><li>&lt;<span class="hotPink">amp-video</span>&gt;</li><li>&lt;<span class="hotPink">amp-facebook</span>&gt;</li></ul></li><li>AMP JaveScript - &lt;<span class="hotPink">script</span>&gt;<ul><li>&lt;<span class="hotPink">amp-accordion</span>&gt;</li><li>&lt;<span class="hotPink">amp-bind</span>&gt;</li><li>&lt;<span class="hotPink">amp-sidebar</span>&gt;</li><li>&lt;<span class="hotPink">amp-fit-text</span>&gt;</li><li>&lt;<span class="hotPink">amp-carousel</span>&gt;</li><li>&lt;<span class="hotPink">amp-position-observer</span>&gt;</li><li>&lt;<span class="hotPink">amp-animation</span>&gt;</li><li>&lt;<span class="hotPink">amp-lightbox</span>&gt;</li><li>&lt;<span class="hotPink">amp-selector</span>&gt;</li><li>&lt;<span class="hotPink">amp-state</span>&gt;</li></ul></li><li>&lt;CSS3&gt;<ul> <span class="hotPink">@keyframes</span> <span class="hotPink">@media</span> .col .col-12 .sm-col-6</ul></li><li>&lt;PHP&gt; Basics<ul><li>&lt;?php <span class="hotPink">if</span>( $amp_home_page ): ?&gt;</li><li>&lt;?php <span class="hotPink">while</span> ($latest-&gt;<span class="brightBlue">have_posts</span>(<span class="yellow">''</span>)) : $latest-&gt;<span class="brightBlue">the_post</span>(<span class="yellow">''</span>); ?&gt;</li><li>&lt;?php <span class="brightBlue">the_author</span>(); ?&gt;</li><li>&lt;?php <span class="brightBlue">the_time</span>(<span class="yellow">'m.d.Y'</span>); ?&gt;</li><li>&lt;?php <span class="brightBlue">the_excerpt</span>(); ?&gt;</li><li>&lt;?php <span class="brightBlue">the_permalink</span>(); ?&gt;</li></ul></li><li>Working with a localhost<ul><li>MAMP</li></ul></li><li>WordPress:<ul><li>Theme integration into your website</li><li>Plugins<ul><li>AMP</li><li>Advaced Custom Forms</li></ul></li></ul></li><li>Web Development Resources<ul><li>Sublime Test 3</li><li>Google Chrome Developer Tools</li><li>Webhosting Reseller Programs</li><li>Our favorite and MOST used Google Chrome Extensions</li></ul></li><li>SEO Principles a la:<ul><li>Neil Patel</li><li>Rand Fishkin</li><li>Brian Dean</li></ul></li><li>And tons of dropped in tidbits of !#GoldDust</li></ul> </code>
+                            </amp-fit-text>
+                        </div>
+                        <div class="col col-10 sm-hide md-hide lg-hide" id="codeBlock2">
+                            <amp-fit-text class="bbar" width="100" height="205" layout="responsive">
+                                <code><ul><li>&lt;HTML5&gt;</li><li>AMP HTML - &lt;<span class="hotPink">html</span> ⚡ <span class="lightGreen">lang</span><span class="yellow">="en"</span>&gt;<ul><li>&lt;<span class="hotPink">amp-img</span>&gt;</li><li>&lt;<span class="hotPink">amp-iframe</span>&gt;</li><li>&lt;<span class="hotPink">amp-video</span>&gt;</li><li>&lt;<span class="hotPink">amp-facebook</span>&gt;</li></ul></li><li>AMP JaveScript - &lt;<span class="hotPink">script</span>&gt;<ul><li>&lt;<span class="hotPink">amp-accordion</span>&gt;</li><li>&lt;<span class="hotPink">amp-bind</span>&gt;</li><li>&lt;<span class="hotPink">amp-sidebar</span>&gt;</li><li>&lt;<span class="hotPink">amp-fit-text</span>&gt;</li><li>&lt;<span class="hotPink">amp-carousel</span>&gt;</li><li>&lt;<span class="hotPink">amp-position-observer</span>&gt;</li><li>&lt;<span class="hotPink">amp-animation</span>&gt;</li><li>&lt;<span class="hotPink">amp-lightbox</span>&gt;</li><li>&lt;<span class="hotPink">amp-selector</span>&gt;</li><li>&lt;<span class="hotPink">amp-state</span>&gt;</li></ul></li><li>&lt;CSS3&gt;<ul><li><span class="hotPink">@keyframes</span></li><li><span class="hotPink">@media</span></li><li>.col</li><li>.col-12</li><li>.sm-col-6</li></ul></li><li>&lt;PHP&gt; Basics<ul><li>&lt;?php <span class="hotPink">if</span>( $amp_home_page ): ?&gt;</li><li>&lt;?php <span class="hotPink">while</span> ($latest-&gt;<span class="brightBlue">have_posts</span>(<span class="yellow">''</span>)) : $latest-&gt;<span class="brightBlue">the_post</span>(<span class="yellow">''</span>); ?&gt;</li><li>&lt;?php <span class="brightBlue">the_author</span>(); ?&gt;</li><li>&lt;?php <span class="brightBlue">the_time</span>(<span class="yellow">'m.d.Y'</span>); ?&gt;</li><li>&lt;?php <span class="brightBlue">the_excerpt</span>(); ?&gt;</li><li>&lt;?php <span class="brightBlue">the_permalink</span>(); ?&gt;</li></ul></li><li>Working with a localhost<ul><li>MAMP</li></ul></li><li>WordPress:<ul><li>Theme integration into your website</li><li>Plugins<ul><li>AMP</li><li>Advaced Custom Forms</li></ul></li></ul></li><li>Web Development Resources<ul><li>Sublime Test 3</li><li>Google Chrome Developer Tools</li><li>Webhosting Reseller Programs</li><li>Our favorite and MOST used Google Chrome Extensions</li></ul></li><li>SEO Principles a la:<ul><li>Neil Patel</li><li>Rand Fishkin</li><li>Brian Dean</li></ul></li><li>And tons of dropped in tidbits of !#GoldDust</li></ul> </code>
+                            </amp-fit-text>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="col col-12" id="popUpWrapper">
+            <section class="col col-12" id="instructorBox">
+                <div class="col xs-col-12 md-col-7">
+                    <h2>Meet Your Instructor</h2>
+                    <h3>Daniel Bisett</h3>
+                </div>
+                <div class="col xs-col-12 md-col-5" id="socialIconsBox">
+                    <div class="col xs-col-2 socialIcon"> <a href="https://linkedin.com/in/austintude/" target="_blank">
+                            <amp-img id="linkedin" src="assets/imgs/icons/linkedin-icon.png" width="1" height="1"
+                                class="" layout="responsive" alt="LinkedIn Icon"> </amp-img>
+                        </a></div>
+                    <div class="col xs-col-2 socialIcon"> <a href="https://twitter.com/in/austintude/" target="_blank">
+                            <amp-img id="twitter" src="assets/imgs/icons/twitter-icon.png" width="1" height="1" class=""
+                                layout="responsive" alt="Twitter Icon"> </amp-img>
+                        </a></div>
+                    <div class="col xs-col-2 socialIcon"> <a href="https://facebook.com/in/austintude/" target="_blank">
+                            <amp-img id="facebook" src="assets/imgs/icons/facebook-icon.png" width="1" height="1"
+                                class="" layout="responsive" alt="facebook Icon"> </amp-img>
+                        </a></div>
+                    <div class="col xs-col-2 socialIcon"> <a href="https://instagram.com/in/austintude/"
+                            target="_blank">
+                            <amp-img id="instagram" src="assets/imgs/icons/instagram-icon.png" width="1" height="1"
+                                class="" layout="responsive" alt="Instagram Icon"> </amp-img>
+                        </a></div>
+                    <div class="col xs-col-2 socialIcon"> <a
+                            href="https://www.youtube.com/channel/UC7rOpDqp7b4DoXtt1MdXyhA" target="_blank">
+                            <amp-img id="youtube" src="assets/imgs/icons/youtube-icon.png" width="1" height="1" class=""
+                                layout="responsive" alt="YouTube Icon"> </amp-img>
+                        </a></div>
+                </div>
+                <div class="col xs-col-12 md-col-6" id="instructorContent">
+                    <p>In 1997, Daniel Bisett got his first paying job as working as a web designer.</p>
+                    <p>Back then, images and colors had only JUST entered the world wide web of possiblities!</p>
+                    <p>Then, after graduating college in 1998, Daniel travelled the globe teaching ESL (English as a
+                        Second Language).</p>
+                    <p>After marrying in 2005, he ended up working as an IT Systems Trainer for the Aberdeen City
+                        Council in Scotland and was re-introduced to the world of web development.</p>
+                    <p>3 more years of ESL teaching followed at the Aberdeen College allowing his web design skills to
+                        rust over yet again.</p>
+                    <p>In 2008, Daniel and his wife moved to Texas where he took on a Web Design teaching position at a
+                        small high school in rural Wimberley, Texas.</p>
+                    <p>He used to tell his students that if he were any good at web design, he wouldn't be teaching
+                        them, he'd be doing it professionally.</p>
+                    <p>Well, after 8 years of teaching Web Design (as well as Game Design and Graphic Design), Daniel's
+                        skills had finally been honed.</p>
+                    <p>True to his word, he struck off on his own and built a small <a
+                            href="https://austintatiousdesign.co/amp/" target="_blank">web development and digital
+                            marketing agency called the Austintatious Design Co.</a></p>
+                    <p>Keeping up with all of the latest trends, Daniel soon realized that Google's AMP project was
+                        something more than a fashnionable trend and showed promise to turn into one of the fastest
+                        growing web design methods ever.</p>
+                    <p>Realizing the potential that AMP had to offer, Daniel couldn't sit still, so he built this course
+                        to help teach other hobbiest cum freelancepreneurs out there how to harness the power of AMP and
+                        scale their opportunities to the next level and beyond!</p>
+                    <p>With Daniel's 20 years of combined web development and world wide teaching experience, we hope
+                        you will agree, he has built a fantastic course that will teach you everything you need to know
+                        to get out there and help AMPlify the world... wide web!</p>
+                </div>
+                <div class="col xs-col-12 md-col-6 center" id="facebookvid">
+                    <amp-facebook width="552" height="310" layout="responsive" data-embed-as="video"
+                        data-href="https://facebook.com/austintatiousdesign/videos/435808673543678/"> </amp-facebook>
+                </div>
+                <div class="col col-12 mt4" id="teamCards">
+                    <div class="col col-3 teamCard center px1">
+                        <amp-img id="card1" src="assets/imgs/team/austintude-1.png" width="2" height="3" class=""
+                            layout="responsive" alt="Quiet and Solitude"> </amp-img>
+                    </div>
+                    <div class="col col-3 teamCard center px1">
+                        <amp-img id="card2" src="assets/imgs/team/austintude-2.png" width="2" height="3" class=""
+                            layout="responsive" alt="Yayyess"> </amp-img>
+                    </div>
+                    <div class="col col-3 teamCard center px1">
+                        <amp-img id="card3" src="assets/imgs/team/austintude-3.png" width="2" height="3" class=""
+                            layout="responsive" alt="Happy x-mas"> </amp-img>
+                    </div>
+                    <div class="col col-3 teamCard center px1">
+                        <amp-img id="card4" src="assets/imgs/team/austintude-4.png" width="2" height="3" class=""
+                            layout="responsive" alt="Gold Finger"> </amp-img>
+                    </div>
+                </div>
+            </section>
+            <div class="col sm-col-12" id="testimonialBlock">
+                <div class="center">
+                    <amp-position-observer on="scroll:fadeTransition3.seekTo(percent=event.percent)"
+                        intersection-ratios="0" layout="nodisplay"> </amp-position-observer>
+                    <amp-position-observer on="enter:slideTransition3.start;" intersection-ratios="0.5"
+                        layout="nodisplay"> </amp-position-observer>
+                    <amp-img id="ampStick3" src="assets/imgs/amp-pro-stick-gradiant.jpg" width="3" height="80" class=""
+                        layout="fixed" alt="AMP Like a Pro Stick of Gradiant Blue"> </amp-img>
+                    <amp-animation id="fadeTransition3" layout="nodisplay">
+                        <script
+                            type="application/json">{"duration":"1","fill":"both","direction":"reverse","animations":[{"selector":"#ampStick3","keyframes":[{"opacity":"0","offset":0},{"opacity":"1","offset":0.4},{"opacity":"1","offset":0.6},{"opacity":"0","offset":1}]}]}</script>
+                    </amp-animation>
+                    <amp-animation id="slideTransition3" layout="nodisplay">
+                        <script
+                            type="application/json">{"duration":"500ms","fill":"both","easing":"ease","iterations":"1","animations":[{"selector":"#ampStick3","keyframes":[{"transform":"translateY(-10rem)"},{"transform":"translateY(0rem)"}]}]}</script>
+                    </amp-animation>
+                </div>
+                <section class="col col-12" id="testimonialContent">
+                    <div class="col col-12 center" id="testimonialTitle">
+                        <h3>What Others Say</h3>
+                        <amp-img id="subampStick" src="assets/imgs/amp-pro-stick-gradiant.jpg" width="3" height="300"
+                            class="" layout="fixed" alt="Amp Like A Pro Stick of Gradiant Blue"> </amp-img>
+                    </div>
+                    <div class="col col-12" id="testimonialIcons">
+                        <div class="col col-4 testCard center px2"> <a class=""
+                                on="tap:AMP.setState({allTestimonials: {currentTestimonial: 'Not only did this experience teach me the proper coding of web design and the process of building a running website, but it also taught me how to learn independently, how to stick with a problem and find ways of solving it, and perhaps most significantly, the experience taught me the skills that will enable me to continue to develop my web designing skills beyond the electronic classroom. Bisetts an excellent instructor who really knows his stuff. He’s truly enthusiastic about web design and about sharing his knowledge with his students. I really enjoyed his course and would definitely take it again!', currentReviewer: 'Jessica Lenz'}})">
+                                <amp-img id="clientA" src="assets/imgs/testimonial-logos/jessica-lenz.jpg" width="400"
+                                    height="400" class="clear" layout="responsive" alt="Jessica Lenz"> </amp-img>
+                            </a></div>
+                        <div class="col col-4 testCard center px2"> <a class=""
+                                on="tap:AMP.setState({allTestimonials: {currentTestimonial: 'Not only did AMP Like A Pro teach me the skills and technique necessary to do well in the web design field, but through personalized learning opportunities, the course also encouraged and fostered ideas that allowed for independent success.', currentReviewer: 'McCoy Genfan'}})">
+                                <amp-img id="clientB" src="assets/imgs/testimonial-logos/mccoy-genfan.jpg" width="400"
+                                    height="400" class="clear" layout="responsive" alt="McCoy Genfan"> </amp-img>
+                            </a></div>
+                        <div class="col col-4 testCard center px2"> <a class=""
+                                on="tap:AMP.setState({allTestimonials: {currentTestimonial: 'AMP Like A Pro taught me every core value I expected and needed to learn. The ideas and knowledge I received are already helping me achieve my web development goals.', currentReviewer: 'Guy With No Name'}})">
+                                <amp-img id="clientC" src="assets/imgs/testimonial-logos/this-other-random-guy.jpg"
+                                    width="400" height="400" class="clear" layout="responsive" alt="Guy With No Name">
+                                </amp-img>
+                            </a></div>
+                    </div>
+                </section>
+                <div class="col col-12" id="bindedTestBlock">
+                    <section class="col col-12" id="bindedTestimonial"> <span itemscope=""
+                            itemtype="http://schema.org/Review"> <span class="rating" itemprop="reviewRating"
+                                itemscope="" itemtype="https://schema.org/Rating"> </span> <br> <span
+                                itemprop="ratingValue">5</span> / <span itemprop="bestRating">5</span>
+                            <meta itemprop="worstRating" content="0"> <br><br>
+                            <p [text]="'&quot;' + allTestimonials.currentTestimonial + '&quot;'"> <span
+                                    itemprop="reviewBody" class="reviewBody mb2"> "Not only did this experience teach me
+                                    the proper coding of web design and the process of building a running website, but
+                                    it also taught me how to learn independently, how to stick with a problem and find
+                                    ways of solving it, and perhaps most significantly, the experience taught me the
+                                    skills that will enable me to continue to develop my web designing skills beyond the
+                                    electronic classroom. Bisetts an excellent instructor who really knows his stuff.
+                                    He’s truly enthusiastic about web design and about sharing his knowledge with his
+                                    students. I really enjoyed his course and would definitely take it again!" </span>
+                            </p>
+                            <div class="" id="reviewerCompany"><cite title="Source Title" class="center"> <span
+                                        id="currentRevieweStyle">
+                                        <h4 [text]="allTestimonials.currentReviewer"> Jessica Lenz</h4>
+                                    </span></cite></div>
+                        </span> </section>
+                </div>
+            </div>
+            <section id="amp-bind">
+                <div class="col col-3 animated" id="popUpContainer">
+                    <amp-animation id="hingedPopUp" layout="nodisplay">
+                        <script
+                            type="application/json">{"selector":"#popUpContainer","duration":"90s","iterations":"1","easing":"ease-out","opacity":[1],"keyframes":[{"transform":"translateY(0)"},{"transform":"translateY(100%)"},{"transform":"translateY(110%)"},{"transform":"translateY(110%)"},{"transform":"translateY(110%)"},{"transform":"translateY(110%)"},{"transform":"translateY(110%)"},{"transform":"translateY(110%)"},{"transform":"translateY(110%)"},{"transform":"translateY(110%)"},{"transform":"translateY(110%)"},{"transform":"translateY(110%)"},{"transform":"translateY(110%)"},{"transform":"translateY(110%)"},{"transform":"translateY(110%)"},{"transform":"translateY(110%)"},{"transform":"translateY(110%)"}]}</script>
+                    </amp-animation>
+                    <div role="button" tabindex="none" on="tap:hingedPopUp.start" id="closeMe"> X</div>
+                    <section id="CTABox">
+                        <h3> It's Never Too Late To Kick@$$!</h3>
+                        <div id="whosYourBoss">
+                            <p> Who Is Your Boss? Shouldn't the answer to that simple question be YOU?</p>
+                            <p> Learn to AMP Like A Pro, and you will never have to answer to anyone but yourself again!
+                            </p>
+                        </div>
+                        <amp-iframe media="(min-width: 641px)" width="600" height="280"
+                            sandbox="allow-scripts allow-same-origin" layout="responsive" allowfullscreen
+                            frameborder="0" src="https://forms.amplikeapro.com/join-now">
+                            <amp-img layout="fill" width="683" height="384" src="assets/imgs/amp-like-a-pro-min.jpg"
+                                placeholder />
+                            </amp-img>
+                        </amp-iframe>
+                        <amp-iframe media="(max-width: 640px)" width="300" height="140"
+                            sandbox="allow-scripts allow-same-origin" layout="responsive" allowfullscreen
+                            frameborder="0" src="https://forms.amplikeapro.com/join-now">
+                            <amp-img layout="fill" width="683" height="384" src="assets/imgs/amp-like-a-pro-min.jpg"
+                                placeholder> </amp-img>
+                        </amp-iframe>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="col col-12" id="contactBlock">
+        <div class="col col-12 center" id="rAMP"> <br>
+            <h2> Are you ready to learn how to rAMP up your life?</h2>
+        </div>
+        <div class="col xs-col-12 sm-col-12" id="contactFrame">
+            <amp-iframe media="(max-width: 640px)" width="300" height="140" sandbox="allow-same-origin allow-scripts"
+                layout="responsive" allowfullscreen frameborder="0" src="https://forms.amplikeapro.com/join-now">
+                <amp-img layout="fill" width="683" height="384" src="assets/imgs/amp-like-a-pro-min.jpg" placeholder>
+                </amp-img>
+            </amp-iframe>
+            <amp-iframe media="(min-width:641px) and (max-width: 1439px)" width="600" height="200"
+                sandbox="allow-same-origin allow-scripts" layout="responsive" allowfullscreen frameborder="0"
+                src="https://forms.amplikeapro.com/join-now">
+                <amp-img layout="fill" width="683" height="384" src="assets/imgs/amp-like-a-pro-min.jpg" placeholder>
+                </amp-img>
+            </amp-iframe>
+            <amp-iframe media="(min-width:1440px)" width="600" height="140" sandbox="allow-same-origin allow-scripts"
+                layout="responsive" allowfullscreen frameborder="0" src="https://forms.amplikeapro.com/join-now">
+                <amp-img layout="fill" width="683" height="384" src="assets/imgs/amp-like-a-pro-min.jpg" placeholder>
+                </amp-img>
+            </amp-iframe>
+        </div>
+        <div class="col col-3 xs-hide ml4"> &nbsp;</div>
+    </div>
+    <footer class="ampstart-footer clearfix col col-12 items-center footer">
+        <ul class="ampstart-social-follow overlay col col-12 list-reset justify-around items-center m0 mb4">
+            <li class="col sm-col-12 pl1 z3">
+                <div itemscope="" itemtype="schema.org/LocalBusiness" itemref="_image2"
+                    class="col xs-col-12 z3 pr2 mb4">
+                    <div class="center">
+                        <div itemscope="" itemtype="schema.org/LocalBusiness">
+                            <h3> AMP Like A Pro<amp-img src="assets/imgs/amp-like-a-pro-logo.png" width="60" height="60"
+                                    class="footerPro" layout="fixed" alt="AMP Like A Pro logo"> </amp-img>
+                            </h3>
+                            <div class="col col-12">
+                                <div class="clearfix col col-12" id="socialIcons">
+                                    <div class="col xs-col-4"> <a href="https://facebook.com/austintude/"
+                                            target="_blank">
+                                            <amp-img src="assets/imgs/social/facebook-icon.png" width="35" height="35"
+                                                class="" layout="fixed" alt="Facebook Icon"> </amp-img>
+                                        </a></div>
+                                    <div class="col xs-col-4"> <a href="https://twitter.com/austintude/"
+                                            target="_blank">
+                                            <amp-img src="assets/imgs/social/twitter-icon.png" width="35" height="35"
+                                                class="" layout="fixed" alt="Twitter Icon"> </amp-img>
+                                        </a></div>
+                                    <div class="col xs-col-4"> <a href="https://linkedin.com/in/austintude/"
+                                            target="_blank">
+                                            <amp-img src="assets/imgs/social/linkedin-icon.png" width="35" height="35"
+                                                class="" layout="fixed" alt="LinkedIn Icon"> </amp-img>
+                                        </a></div>
+                                    <div class="col xs-col-4"> &nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="col xs-col-10 leftMargin">
+                                <div class="streetAddress clearfix col xs-col-12 sm-col-4 pr1">
+                                    <div class="col xs-hide sm-col-2"> &nbsp;</div>
+                                    <div class="col xs-col-4">
+                                        <amp-img src="assets/imgs/social/map.png" width="30" height="30" layout="fixed"
+                                            class="" alt="map icon"> </amp-img>
+                                    </div>
+                                    <div class="col xs-col-7 pt1">
+                                        <address> <span itemprop="name"> AMP Like A Pro </span>
+                                            <div itemprop="address" itemscope=""
+                                                itemtype="http://schema.org/PostalAddress"> <span
+                                                    itemprop="addressLocality"> Wimberley </span>, <span
+                                                    itemprop="addressRegion"> Texas </span></div>
+                                        </address>
+                                    </div>
+                                </div>
+                                <div class="phoneNumber clearfix col xs-col-12 sm-col-4">
+                                    <div class="col xs-hide sm-col-2"> &nbsp;</div>
+                                    <div class="col xs-col-4">
+                                        <amp-img src="assets/imgs/social/telephone.png" width="30" height="30"
+                                            layout="fixed" class="" alt="phone icon"> </amp-img>
+                                    </div>
+                                    <div class="col xs-col-7 pt1"> <span> <a href="tel:4698502946"> Telephone - <br>
+                                                <span itemprop="telephone"> (469) 850-2946 </span> </a> </span></div>
+                                </div>
+                                <div class="hoursOfOperation clearfix col xs-col-12 sm-col-4">
+                                    <div class="col xs-hide sm-col-2"> &nbsp;</div>
+                                    <div class="col xs-col-4">
+                                        <amp-img src="assets/imgs/social/clock.png" width="30" height="30"
+                                            layout="fixed" class="" alt="clock icon"> </amp-img>
+                                    </div>
+                                    <div class="col xs-col-7 pt1"> <span itemprop="hours"> Hours of Operation: <br> Mon
+                                            - Sat <br> 9:00am - 11:59pm (GMT-6)</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="col xs-col-12 center mx-auto" id="austintatious">
+            <h4> © 2018</h4> <strong> <a href="https://austintatiousdesign.co/amp/" target="_blank"> Austintatious
+                    Design Co. </a> </strong>
+        </div>
+    </footer>
+</body>
+
+</html>
