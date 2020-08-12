@@ -1,4 +1,19 @@
 <!doctype html>
+<!---
+Copyright 2020 AMP Like a Pro Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
 <html ⚡ lang="en">
 
 <head>
@@ -928,6 +943,9 @@
         }
 
         amp-accordion section:not([expanded]) .show-less {
+            display: none
+        }
+        amp-accordion section:matches([expanded]) .show-more {
             display: none
         }
 
@@ -1879,6 +1897,7 @@
 </head>
 
 <body>
+    <!-- Start Navigation -->
     <header class="fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4" id="">
         <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger pr2" id="burger">
             ☰</div> <a href="https://free-amp-templates.github.io/" class="my0 mx-auto">
@@ -1888,6 +1907,9 @@
             </div>
         </a>
     </header>
+   
+
+    <!-- Start Sidebar -->
     <amp-sidebar id="header-sidebar" class="ampstart-sidebar px3 flex flex-column" layout="nodisplay">
         <div class="flex justify-start items-center ampstart-sidebar-header"> <a href="#" on="tap:header-sidebar.toggle"
                 class="ampstart-navbar-trigger items-start"> x </a></div>
@@ -1968,7 +1990,12 @@
             </ul>
         </nav>
     </amp-sidebar>
+    <!-- End Sidebar -->
+    <!-- End Navigation -->
+
+    <!-- Start Hero -->
     <div id="pageWrap">
+        <!-- Start Parallax Video Background -->
         <div id="videoBackground">
             <div class="parallax-image-window">
                 <amp-position-observer on="scroll:parallaxTransition.seekTo(percent=event.percent)" layout="nodisplay">
@@ -1984,7 +2011,11 @@
                     layout="fill" alt="AMP Like A Pro background" id="ampBanner"> </amp-img>
             </div>
         </div>
+        <!-- End Parallax Video Background -->
+
+        <!-- Start Carousel Hero Overlay -->
         <div class="carousel">
+            <!-- Start Tablet/Desktop Hero Overlay -->
             <div class="sm-hide">
                 <amp-carousel height="300" layout="fixed-height" type="slides" autoplay delay="5000">
                     <div class="textBox">
@@ -2044,6 +2075,9 @@
                     </div>
                 </amp-carousel>
             </div>
+            <!-- End Tablet/Desktop Hero Overlay -->
+
+            <!-- Start Regular Mobile Hero Overlay -->
             <div class="xs-hide md-hide lg-hide">
                 <amp-carousel height="300" layout="fixed-height" type="slides" autoplay delay="5000">
                     <div class="textBox">
@@ -2103,10 +2137,15 @@
                     </div>
                 </amp-carousel>
             </div>
+            <!-- End Regular Mobile Hero Overlay -->
+
+            <!-- End Carousel Hero Overlay -->
             <div id="who">
                 <h3 class="pb3"> Ready Out Of The Box</h3>
             </div>
         </div>
+            <!-- End Hero -->
+
         <main class="col col-12">
             <div class="col col-12" id="container">
                 <div class="" id="theFold">
@@ -2126,6 +2165,7 @@
                                 type="application/json">{"duration":"500ms","fill":"both","easing":"ease","iterations":"1","animations":[{"selector":"#ampStick","keyframes":[{"transform":"translateY(-10rem)"},{"transform":"translateY(0rem)"}]}]}</script>
                         </amp-animation>
                     </div>
+                    <!-- Start What We Do wwdo -->
                     <section class="col col-12 wwdo" id="wwdo">
                         <div id="wwdo-animation">
                             <amp-position-observer on="scroll:fadeTransitionwwdo.seekTo(percent=event.percent)"
@@ -2138,6 +2178,7 @@
                                 <h3>Every Website Needs AMP!</h3>
                             </div>
                         </div>
+                        <!-- Start What We Do Text -->
                         <div class="col xs-col xs-col-12 md-col-7" id="wwdoText">
                             <amp-position-observer on="scroll:fadeTransitionwwdo.seekTo(percent=event.percent)"
                                 intersection-ratios="0" layout="nodisplay"> </amp-position-observer>
@@ -2197,8 +2238,12 @@
                             </amp-img>
                         </amp-iframe>
                         </div>
+                        <!-- End What We Do Text -->
                     </section>
+                    <!-- End What We Do wwdo -->
                 </div>
+
+                <!-- Start Featured Block -->
                 <div class="col col-12" id="featured">
                     <amp-position-observer on="scroll:fadeTransitionfc.seekTo(percent=event.percent)"
                         intersection-ratios="0" layout="nodisplay"> </amp-position-observer>
@@ -2213,6 +2258,8 @@
                             type="application/json">{"duration":"500ms","fill":"both","easing":"ease","iterations":"1","animations":[{"selector":".featuredCard","keyframes":[{"transform":"translateX(-5rem)"},{"transform":"translateX(0rem)"}]}]}</script>
                     </amp-animation>
                     <div id="fc">
+
+                        <!-- Start Featured Templates Block -->
                         <div class="" id="featuredTemplates">
                             <h2> Featured Templates</h2>
                             <h4> These AMP Templates are Free to Download</h4>
@@ -2371,8 +2418,10 @@
                                 </amp-accordion>
                             </div>
                         </div>
+                        <!-- End Featured Templates Block -->
                     </div>
                 </div>
+                <!-- End Featured Block -->
             </div>
         </main>
         <div class="col xs-col xs-col-12 sm-col-12" id="greyBack">
@@ -2411,7 +2460,7 @@
                         <script
                             type="application/json">{"duration":"1","fill":"both","direction":"reverse","animations":[{"selector":".ged","keyframes":[{"opacity":"1","offset":0},{"opacity":"1","offset":0.4},{"opacity":"1","offset":0.6},{"opacity":"0","offset":1}]}]}</script>
                     </amp-animation>
-                    <h2 class="www-heading mb2 relative ged"> Who Should learn to AMP Like A Pro?</h2>
+                    <h2 class="www-heading mb2 relative ged"> Who Should Use Templates by AMP Like A Pro?</h2>
                     <amp-fit-text class="ged xs-hide md-hide lg-hide" width="100" height="85" layout="responsive"
                         id="ipad">
                         <p> Whether you're a hobbiest just looking to build your best friend a killer fast site, an
