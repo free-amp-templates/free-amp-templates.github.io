@@ -1870,6 +1870,8 @@ limitations under the License.
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <script async custom-element="amp-facebook" src="https://cdn.ampproject.org/v0/amp-facebook-0.1.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <!-- AMP Analytics --><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    
     <meta itemprop="name" content="AMP Templates by AMP Like A Pro">
     <meta itemprop="image" content="assets/imgs/amp-like-a-pro-logo.png">
     <meta name="twitter:card" content="summary">
@@ -1898,10 +1900,12 @@ limitations under the License.
     <link rel="shortcut icon" href="assets/imgs/amp-like-a-pro-logo.png">
     <meta name="msapplication-TileColor" content="#fff">
     <meta name="msapplication-TileImage" content="assets/imgs/amp-like-a-pro-logo.png">
-    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
 </head>
 
 <body>
+    <!-- Google Tag Manager -->
+<amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-KXK8FT6&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
     <!-- Start Navigation -->
     <header class="fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4" id="">
         <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger pr2" id="burger">
